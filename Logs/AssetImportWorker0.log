@@ -1,338 +1,234 @@
 Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'tr' Physical Memory: 8136 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/turkayleblebicioglu/Documents/GitHub/ProjectTieFighters
+C:/Users/turka/Documents/GitHub/ProjectTieFighters
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49248
-Successfully changed project path to: /Users/turkayleblebicioglu/Documents/GitHub/ProjectTieFighters
-/Users/turkayleblebicioglu/Documents/GitHub/ProjectTieFighters
+49917
+Successfully changed project path to: C:/Users/turka/Documents/GitHub/ProjectTieFighters
+C:/Users/turka/Documents/GitHub/ProjectTieFighters
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 48.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 105.09 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/turkayleblebicioglu/Documents/GitHub/ProjectTieFighters/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/turka/Documents/GitHub/ProjectTieFighters/Assets
 GfxDevice: creating device client; threaded=0
-2021-01-20 17:54:11.836 Unity[506:6946] Color LCD preferred device: Intel(R) UHD Graphics 617 (low power)
-2021-01-20 17:54:11.836 Unity[506:6946] Metal devices available: 1
-2021-01-20 17:54:11.836 Unity[506:6946] 0: Intel(R) UHD Graphics 617 (low power)
-2021-01-20 17:54:11.837 Unity[506:6946] Using device Intel(R) UHD Graphics 617 (low power)
-Initializing Metal device caps: Intel(R) UHD Graphics 617
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 630 (ID=0x1284)
+    Vendor:   
+    VRAM:     2007 MB
+    Driver:   26.21.14.3200
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56506
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2020.2.1f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2020.2.1f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.000601 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.219252 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 38.39 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 39.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.467 seconds
+- Completed reload, in  5.407 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000597 seconds.
+Registered in 0.038954 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 39.55 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 225.75 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
+- Completed reload, in  2.267 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1787 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 168.2 MB.
-System memory in use after: 168.3 MB.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.6 MB.
+System memory in use after: 102.6 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2250.
-Total: 3.205977 ms (FindLiveObjects: 0.492625 ms CreateObjectMapping: 0.112666 ms MarkObjects: 2.456692 ms  DeleteObjects: 0.142683 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a2c4dac9df7c17871e19a3b74f0e9f') in 0.005973 seconds
-  Import took 0.011690 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/spaceship_sprites
-  artifactKey: Guid(067bb22d5a6a1483ca4ba70593b3052d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/spaceship_sprites using Guid(067bb22d5a6a1483ca4ba70593b3052d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55470b5c798f7c35785fa2a6ac3887ac') in 0.001162 seconds
-  Import took 0.004678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.638592 seconds.
-  path: Assets/Spaceships
-  artifactKey: Guid(067bb22d5a6a1483ca4ba70593b3052d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships using Guid(067bb22d5a6a1483ca4ba70593b3052d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6ade965304ea901645aab1e57e3eca') in 0.001518 seconds
-  Import took 0.008728 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.562430 seconds.
-  path: Assets/Spaceships/prefabs
-  artifactKey: Guid(883db9dfea2f6444f86576a21667edcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs using Guid(883db9dfea2f6444f86576a21667edcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b13fb3ffb3fbc86c53941a72fadd94b') in 0.001548 seconds
-  Import took 0.006797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.119139 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_1.prefab
-  artifactKey: Guid(7a70adb45063260458b0352db99d899c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_1.prefab using Guid(7a70adb45063260458b0352db99d899c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7b271db065a5cd4e1e7d2a8e983a6e') in 0.555003 seconds
-  Import took 0.560107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_5.prefab
-  artifactKey: Guid(b16d6b0dc82a2f64e93b38b2e642a18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_5.prefab using Guid(b16d6b0dc82a2f64e93b38b2e642a18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93667cac0fa523f833ac196f4098d91') in 0.061953 seconds
-  Import took 0.065994 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_2.prefab
-  artifactKey: Guid(e2a563409f05b26429e07cb45c0d2ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_2.prefab using Guid(e2a563409f05b26429e07cb45c0d2ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6716fda86afbb8b5a9ddf0dc5860667a') in 0.016265 seconds
-  Import took 0.021244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_4.prefab
-  artifactKey: Guid(6ebfe353680ffd64ebfc2d27dad79525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_4.prefab using Guid(6ebfe353680ffd64ebfc2d27dad79525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b083ff41ebc91ecbe86a33688ff434') in 0.057177 seconds
-  Import took 0.063203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_3.prefab
-  artifactKey: Guid(e1e3a28de8604ba44a52ba4a3f16c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_3.prefab using Guid(e1e3a28de8604ba44a52ba4a3f16c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed926293f7ff9019782ba3ddfaadee2') in 0.048024 seconds
-  Import took 0.055481 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_8.prefab
-  artifactKey: Guid(fbc4320931e489045b535d6135e557bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_8.prefab using Guid(fbc4320931e489045b535d6135e557bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822fe352d39ae02fcb3c77c23456ff56') in 0.017568 seconds
-  Import took 0.025820 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000379 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_7.prefab
-  artifactKey: Guid(236055fb118b89949bf4698f3928dd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_7.prefab using Guid(236055fb118b89949bf4698f3928dd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a39f81998fe4aae774fc209b5d94ec0') in 0.033520 seconds
-  Import took 0.042323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001009 seconds.
-  path: Assets/Spaceships/prefabs/spaceship_6.prefab
-  artifactKey: Guid(d096b2e176fd8744bb6feb2dd2b160bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/prefabs/spaceship_6.prefab using Guid(d096b2e176fd8744bb6feb2dd2b160bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d46c357dd6988afc18691b20715d9bb') in 0.020260 seconds
-  Import took 0.026785 seconds .
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2251.
+Total: 2.918000 ms (FindLiveObjects: 0.656500 ms CreateObjectMapping: 0.169000 ms MarkObjects: 1.982300 ms  DeleteObjects: 0.108900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000682 seconds.
+Registered in 0.001160 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.180 seconds
+- Completed reload, in  1.090 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.7 MB.
-System memory in use after: 176.7 MB.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.7 MB.
+System memory in use after: 102.7 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2260.
-Total: 2.622926 ms (FindLiveObjects: 0.275539 ms CreateObjectMapping: 0.089778 ms MarkObjects: 2.122155 ms  DeleteObjects: 0.134364 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 289.190711 seconds.
-  path: Assets/Spaceships/animations
-  artifactKey: Guid(1ef61e1ff3ad09045ac8cb5bb2c3fe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations using Guid(1ef61e1ff3ad09045ac8cb5bb2c3fe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188b2a8771cb0b36fd91d27a458ffe05') in 0.005043 seconds
-  Import took 0.010590 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2254.
+Total: 3.988800 ms (FindLiveObjects: 0.448600 ms CreateObjectMapping: 0.238500 ms MarkObjects: 3.149400 ms  DeleteObjects: 0.149700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.507299 seconds.
-  path: Assets/Spaceships/animations/shield.anim
-  artifactKey: Guid(0e41fd33e6d1f004e9114594cfa9c482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/shield.anim using Guid(0e41fd33e6d1f004e9114594cfa9c482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4486a285d25e4ae65688210cfb013ff') in 0.232887 seconds
-  Import took 0.236743 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.198875 seconds.
-  path: Assets/Spaceships/animations/shield.controller
-  artifactKey: Guid(e33bb7f82b235294282149a14bc4fc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/shield.controller using Guid(e33bb7f82b235294282149a14bc4fc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec57397b92a7c34686b32ebd42faf5d5') in 0.213251 seconds
-  Import took 0.217980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.587645 seconds.
-  path: Assets/Spaceships/animations/spaceship1.anim
-  artifactKey: Guid(201a8e0abd59e7742978eb577fe6ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship1.anim using Guid(201a8e0abd59e7742978eb577fe6ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187577d65ec1b0535ee6fb0c5845e955') in 0.006410 seconds
-  Import took 0.013939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.014937 seconds.
-  path: Assets/Spaceships/animations/spaceship2.anim
-  artifactKey: Guid(e0b9e69a02037594d93aa7510ab0614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship2.anim using Guid(e0b9e69a02037594d93aa7510ab0614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e60070b84bf3e401d2afa61251a4afa') in 0.006267 seconds
-  Import took 0.016582 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.940772 seconds.
-  path: Assets/Spaceships/animations/spaceship3.anim
-  artifactKey: Guid(efc24f7e15a4df34bb03fabfde6ed9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship3.anim using Guid(efc24f7e15a4df34bb03fabfde6ed9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09276987f96582fccff115a5c873e935') in 0.006383 seconds
-  Import took 0.012773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.988817 seconds.
-  path: Assets/Spaceships/animations/spaceship4.anim
-  artifactKey: Guid(48911c053107aca4289a8e31824a657d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship4.anim using Guid(48911c053107aca4289a8e31824a657d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a05e916bd8c05264969e6572bad0b37') in 0.007526 seconds
-  Import took 0.014227 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.573754 seconds.
-  path: Assets/Spaceships/animations/spaceship_2.controller
-  artifactKey: Guid(689ad4ef133526b4db5115d8b3eccc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_2.controller using Guid(689ad4ef133526b4db5115d8b3eccc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ebeed0e3f47bea53f48e3883e5497b') in 0.007641 seconds
-  Import took 0.014463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.491396 seconds.
-  path: Assets/Spaceships/animations/spaceship_3.controller
-  artifactKey: Guid(83e944e7ea7307748a4ddbdf6d939610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_3.controller using Guid(83e944e7ea7307748a4ddbdf6d939610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070ea5959cc64e12d386a9500f37c3f0') in 0.007094 seconds
-  Import took 0.012804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.751598 seconds.
-  path: Assets/Spaceships/animations/spaceship_4.controller
-  artifactKey: Guid(4d24b1bde8e367a42bb799ddba01416e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_4.controller using Guid(4d24b1bde8e367a42bb799ddba01416e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5483111ef1e37f5aecb70ee70b7e91e6') in 0.007493 seconds
-  Import took 0.012784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.365665 seconds.
-  path: Assets/Spaceships/animations/spaceship_5.controller
-  artifactKey: Guid(80fc49152fdf5ea4e846b3cfc5ed80d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_5.controller using Guid(80fc49152fdf5ea4e846b3cfc5ed80d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab6c71a8affaecda342fe0bbb733949') in 0.007772 seconds
-  Import took 0.013858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.390682 seconds.
-  path: Assets/Spaceships/animations/spaceship_6.controller
-  artifactKey: Guid(b74f709d29939444dadd241e9456c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_6.controller using Guid(b74f709d29939444dadd241e9456c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5065afbc2fc943a01b5c737215d7ee6') in 0.007672 seconds
-  Import took 0.013041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.348008 seconds.
-  path: Assets/Spaceships/animations/spaceship_7.controller
-  artifactKey: Guid(3c175d303a094dd4f9afb9342abf8a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_7.controller using Guid(3c175d303a094dd4f9afb9342abf8a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee10b1a56a2529a249fd26f6faf4376') in 0.007458 seconds
-  Import took 0.013265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.370479 seconds.
-  path: Assets/Spaceships/animations/spaceship_8.controller
-  artifactKey: Guid(9125a087326c22c46a2f6bc11c643de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship_8.controller using Guid(9125a087326c22c46a2f6bc11c643de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a301bc196e8a425c21ee1b952b86a9') in 0.007326 seconds
-  Import took 0.013680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.405698 seconds.
-  path: Assets/Spaceships/animations/spaceships_0.controller
-  artifactKey: Guid(2ee4c1b0f62dfba47b8ac50b6acf5640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceships_0.controller using Guid(2ee4c1b0f62dfba47b8ac50b6acf5640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f99c361d89dd966fd05572f620e390') in 0.007528 seconds
-  Import took 0.013189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.848277 seconds.
-  path: Assets/Spaceships/animations/spaceship5.anim
-  artifactKey: Guid(a33cdc2821645f6499fcd06435433512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spaceships/animations/spaceship5.anim using Guid(a33cdc2821645f6499fcd06435433512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9125f1475bc76c7894b5a4a5db8ebf') in 0.006924 seconds
-  Import took 0.014701 seconds .
+  path: Assets/Scripts/PlayerSpaceship.cs
+  artifactKey: Guid(363af52a8d514fc4d928ea99ad354d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerSpaceship.cs using Guid(363af52a8d514fc4d928ea99ad354d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b26d048148cbef4fbb5c397dffce0f') in 0.047511 seconds
+  Import took 0.052569 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001987 seconds.
+Registered in 0.002407 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.075 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.8 MB.
+System memory in use after: 102.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2257.
+Total: 5.524000 ms (FindLiveObjects: 0.539600 ms CreateObjectMapping: 0.309800 ms MarkObjects: 4.560100 ms  DeleteObjects: 0.112400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001949 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.259 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.9 MB.
+System memory in use after: 102.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2260.
+Total: 2.250600 ms (FindLiveObjects: 0.198800 ms CreateObjectMapping: 0.074600 ms MarkObjects: 1.869100 ms  DeleteObjects: 0.106900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.9 MB.
+System memory in use after: 102.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2263.
+Total: 2.305100 ms (FindLiveObjects: 0.321500 ms CreateObjectMapping: 0.098800 ms MarkObjects: 1.771300 ms  DeleteObjects: 0.112400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001085 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.218 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.0 MB.
+System memory in use after: 103.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
+Total: 2.694600 ms (FindLiveObjects: 0.350400 ms CreateObjectMapping: 0.170000 ms MarkObjects: 2.065300 ms  DeleteObjects: 0.106900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002725 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -340,12 +236,1463 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.318 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1782 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 185.6 MB.
-System memory in use after: 185.6 MB.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.1 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2263.
-Total: 2.562245 ms (FindLiveObjects: 0.279963 ms CreateObjectMapping: 0.077163 ms MarkObjects: 2.067788 ms  DeleteObjects: 0.136329 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2269.
+Total: 2.360000 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.085000 ms MarkObjects: 1.980000 ms  DeleteObjects: 0.110000 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001076 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.137 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2272.
+Total: 2.325200 ms (FindLiveObjects: 0.309800 ms CreateObjectMapping: 0.105000 ms MarkObjects: 1.801500 ms  DeleteObjects: 0.107800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.167 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2275.
+Total: 2.295700 ms (FindLiveObjects: 0.223200 ms CreateObjectMapping: 0.084000 ms MarkObjects: 1.879700 ms  DeleteObjects: 0.107400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003393 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.393 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.3 MB.
+System memory in use after: 103.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 2.291500 ms (FindLiveObjects: 0.324700 ms CreateObjectMapping: 0.101800 ms MarkObjects: 1.756800 ms  DeleteObjects: 0.107000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1144.741798 seconds.
+  path: Assets/Scripts/ScreenBoundaries.cs
+  artifactKey: Guid(d335e1644bfca1a4da2557daa4078768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScreenBoundaries.cs using Guid(d335e1644bfca1a4da2557daa4078768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b16a4e96f14eb7c4499bca07d48e23') in 0.024122 seconds
+  Import took 0.029775 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001087 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.213 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2282.
+Total: 3.142300 ms (FindLiveObjects: 0.271300 ms CreateObjectMapping: 0.108400 ms MarkObjects: 2.633000 ms  DeleteObjects: 0.127700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001167 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2285.
+Total: 2.603600 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.156700 ms MarkObjects: 2.025700 ms  DeleteObjects: 0.159200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 477.387440 seconds.
+  path: Assets/Scripts/ScreenBoundaries.cs
+  artifactKey: Guid(d335e1644bfca1a4da2557daa4078768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScreenBoundaries.cs using Guid(d335e1644bfca1a4da2557daa4078768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243eabba006d5147c37b2d67853fe417') in 0.006484 seconds
+  Import took 0.010072 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001142 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.371 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 2.328400 ms (FindLiveObjects: 0.278800 ms CreateObjectMapping: 0.091900 ms MarkObjects: 1.843900 ms  DeleteObjects: 0.112400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001950 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.268 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.6 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2291.
+Total: 3.502700 ms (FindLiveObjects: 0.370000 ms CreateObjectMapping: 0.119100 ms MarkObjects: 2.900900 ms  DeleteObjects: 0.111200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001251 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.704 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.7 MB.
+System memory in use after: 103.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2294.
+Total: 3.012600 ms (FindLiveObjects: 0.279600 ms CreateObjectMapping: 0.175100 ms MarkObjects: 2.436600 ms  DeleteObjects: 0.118800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001702 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.7 MB.
+System memory in use after: 103.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2297.
+Total: 2.470300 ms (FindLiveObjects: 0.297500 ms CreateObjectMapping: 0.094500 ms MarkObjects: 1.960100 ms  DeleteObjects: 0.116300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002726 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.094 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 103.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2300.
+Total: 4.012200 ms (FindLiveObjects: 0.303600 ms CreateObjectMapping: 0.173200 ms MarkObjects: 3.359400 ms  DeleteObjects: 0.173500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001727 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.658 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 103.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2303.
+Total: 2.422700 ms (FindLiveObjects: 0.306300 ms CreateObjectMapping: 0.084700 ms MarkObjects: 1.921100 ms  DeleteObjects: 0.109000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001657 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 103.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2306.
+Total: 2.613900 ms (FindLiveObjects: 0.280500 ms CreateObjectMapping: 0.159700 ms MarkObjects: 2.059200 ms  DeleteObjects: 0.113300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 554.344030 seconds.
+  path: Assets/Scripts/ScreenBoundaries.cs
+  artifactKey: Guid(d335e1644bfca1a4da2557daa4078768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScreenBoundaries.cs using Guid(d335e1644bfca1a4da2557daa4078768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f480b8590dd2d69ddc5b9852744c44b') in 0.009432 seconds
+  Import took 0.014036 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001967 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.299 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 103.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2308.
+Total: 2.882900 ms (FindLiveObjects: 0.292600 ms CreateObjectMapping: 0.090300 ms MarkObjects: 2.362300 ms  DeleteObjects: 0.136100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.954059 seconds.
+  path: Assets/Scripts/PlayerSpaceship.cs
+  artifactKey: Guid(363af52a8d514fc4d928ea99ad354d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerSpaceship.cs using Guid(363af52a8d514fc4d928ea99ad354d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd535a85d0200674d1e78a6a00f26e7e0') in 0.009280 seconds
+  Import took 0.014016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001782 seconds.
+  path: Assets/Scripts/PlayerSpaceship.cs
+  artifactKey: Guid(363af52a8d514fc4d928ea99ad354d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerSpaceship.cs using Guid(363af52a8d514fc4d928ea99ad354d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd535a85d0200674d1e78a6a00f26e7e0') in 0.008286 seconds
+  Import took 0.012822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.038661 seconds.
+  path: Assets/Spaceships/animations/shield.anim
+  artifactKey: Guid(0e41fd33e6d1f004e9114594cfa9c482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/shield.anim using Guid(0e41fd33e6d1f004e9114594cfa9c482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a37727e17199fdbf5b00d7689b995f') in 0.050045 seconds
+  Import took 0.054699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.338205 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships
+  artifactKey: Guid(70947e32a0018434abe8f111829951c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships using Guid(70947e32a0018434abe8f111829951c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f489447c33d9a32458065b9b1a099e5d') in 0.020891 seconds
+  Import took 0.025845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.834244 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Scenes
+  artifactKey: Guid(005c3d3293cc8ad4793d103812a43827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Scenes using Guid(005c3d3293cc8ad4793d103812a43827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa9273191e9899aaa46ba86a73a5324') in 0.017310 seconds
+  Import took 0.022666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.716287 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Scenes/Demo.unity
+  artifactKey: Guid(0477776145c31eb40a4b4a8ccd858a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Scenes/Demo.unity using Guid(0477776145c31eb40a4b4a8ccd858a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f00975e851c03d7a25c79f9e8dea89') in 0.013273 seconds
+  Import took 0.017655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.777126 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Sprites/sprites.png
+  artifactKey: Guid(8aeb9e233fbb8f14db39770841b78b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Sprites/sprites.png using Guid(8aeb9e233fbb8f14db39770841b78b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675dca9ec9f49c3793a464eef3a71117') in 0.404045 seconds
+  Import took 0.408738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.678860 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs
+  artifactKey: Guid(b795da7dbee6ab54abac2f6e206ccd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs using Guid(b795da7dbee6ab54abac2f6e206ccd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672fa115f700cdbfd91bafa524175f47') in 0.019944 seconds
+  Import took 0.025209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.164366 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-big.prefab
+  artifactKey: Guid(1740469607c5ef74a9dce354e6c48998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-big.prefab using Guid(1740469607c5ef74a9dce354e6c48998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77503dc84b1e00cf62efaa60d702c8c8') in 0.061462 seconds
+  Import took 0.066923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-small.prefab
+  artifactKey: Guid(dc967d03ca7c44c4899380a87d7ddcbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-small.prefab using Guid(dc967d03ca7c44c4899380a87d7ddcbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf32c9e7a0cd082ae0a7ca0d2c011bc1') in 0.036859 seconds
+  Import took 0.041712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-tail-big.prefab
+  artifactKey: Guid(48e06088b7e195f40898a828bd389ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-tail-big.prefab using Guid(48e06088b7e195f40898a828bd389ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631df175010faa8a138f841d5e112f5b') in 0.037922 seconds
+  Import took 0.046195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-small.prefab
+  artifactKey: Guid(508a3a333f10ebc4aa37b5c8b3aa27e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-small.prefab using Guid(508a3a333f10ebc4aa37b5c8b3aa27e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3796f521f817376716edbdb168287d') in 0.037689 seconds
+  Import took 0.045028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-med.prefab
+  artifactKey: Guid(eb37e015fa916944c81e05758e6ce0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-med.prefab using Guid(eb37e015fa916944c81e05758e6ce0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3698d3baa5bba830600422d05abdb3') in 0.034395 seconds
+  Import took 0.040483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-tail-small.prefab
+  artifactKey: Guid(a7c8b6f2a4acbd34aa0ea5ae6c7401fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-tail-small.prefab using Guid(a7c8b6f2a4acbd34aa0ea5ae6c7401fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8291fb86250418e1452b651ef5bcff99') in 0.039984 seconds
+  Import took 0.044263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-tail-med.prefab
+  artifactKey: Guid(7949930a4be82f14497a46200e300772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-tail-med.prefab using Guid(7949930a4be82f14497a46200e300772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200aa39f59a844a4222eae60c605af12') in 0.037497 seconds
+  Import took 0.041627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-med.prefab
+  artifactKey: Guid(15e42fc786cf33d4e8e26c0543aa563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-med.prefab using Guid(15e42fc786cf33d4e8e26c0543aa563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547dd71a414cc864403d1cd87dc29fe7') in 0.035615 seconds
+  Import took 0.040933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-big.prefab
+  artifactKey: Guid(0b0c27137eb4d504096874b80ace66bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-red-big.prefab using Guid(0b0c27137eb4d504096874b80ace66bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379a7c5e33d030ac55604586afd0ac3c') in 0.037646 seconds
+  Import took 0.042698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-med.prefab
+  artifactKey: Guid(15e42fc786cf33d4e8e26c0543aa563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-med.prefab using Guid(15e42fc786cf33d4e8e26c0543aa563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547dd71a414cc864403d1cd87dc29fe7') in 0.032265 seconds
+  Import took 0.036941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-small.prefab
+  artifactKey: Guid(80936324c84277d498ccd724f0e55e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-small.prefab using Guid(80936324c84277d498ccd724f0e55e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73720fb05b2cc63ac8e041aae4774f80') in 0.036152 seconds
+  Import took 0.041183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-big.prefab
+  artifactKey: Guid(d2f2f92c494bd1c41970791d8041c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-big.prefab using Guid(d2f2f92c494bd1c41970791d8041c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344f4a3e9a555095274e1096c1e1c79e') in 0.032820 seconds
+  Import took 0.039708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-med.prefab
+  artifactKey: Guid(ab6891f5e3e61c54fb1b5a692cee6a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-med.prefab using Guid(ab6891f5e3e61c54fb1b5a692cee6a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92edbe20c75048a090fbd5c41962e301') in 0.036962 seconds
+  Import took 0.042068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004035 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-med.prefab
+  artifactKey: Guid(ab6891f5e3e61c54fb1b5a692cee6a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/fireballs/fireball-blue-tail-med.prefab using Guid(ab6891f5e3e61c54fb1b5a692cee6a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92edbe20c75048a090fbd5c41962e301') in 0.044620 seconds
+  Import took 0.050179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.005360 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d5a172b52c96071f6d48cf65f8488c') in 0.021707 seconds
+  Import took 0.026561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.064650 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs
+  artifactKey: Guid(c3ec34962ccffd6409fcb261a9f12c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs using Guid(c3ec34962ccffd6409fcb261a9f12c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6680208f8d62152c27e65418fa7e511') in 0.018507 seconds
+  Import took 0.023607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.483861 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/ships
+  artifactKey: Guid(e9dca78fa186c8d4da2d1385ce36fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/ships using Guid(e9dca78fa186c8d4da2d1385ce36fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9667eea4e336df6d9059592ec79063') in 0.016734 seconds
+  Import took 0.022670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142070 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/ships/ship1.prefab
+  artifactKey: Guid(401d8aca9e846254890399f66cd7de66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/ships/ship1.prefab using Guid(401d8aca9e846254890399f66cd7de66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a4b3ede998887da9e8fc98ebe600b7') in 0.029274 seconds
+  Import took 0.035229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/ships/ship2.prefab
+  artifactKey: Guid(2ce1fb9d977e03b49a1ce0113faf945e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Prefabs/ships/ship2.prefab using Guid(2ce1fb9d977e03b49a1ce0113faf945e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a6e645a05bd9de3f3bb96578dbcc34') in 0.040579 seconds
+  Import took 0.045172 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001739 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.153 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.2 MB.
+System memory in use after: 107.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2343.
+Total: 2.697500 ms (FindLiveObjects: 0.258200 ms CreateObjectMapping: 0.160000 ms MarkObjects: 2.177000 ms  DeleteObjects: 0.101100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.942034 seconds.
+  path: Assets/Lasers
+  artifactKey: Guid(327e374ddd1921f4ea480b585e046c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers using Guid(327e374ddd1921f4ea480b585e046c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b99adbf3392447fccbe448e232436a') in 0.011619 seconds
+  Import took 0.016973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.831038 seconds.
+  path: Assets/Lasers/fireball-blue-big.prefab
+  artifactKey: Guid(7407b612a14d4da4b93a72163142b1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-blue-big.prefab using Guid(7407b612a14d4da4b93a72163142b1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbd8d61ec121864327e9b0d4099a047') in 0.077059 seconds
+  Import took 0.083035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Lasers/fireball-blue-med.prefab
+  artifactKey: Guid(21e6605d506e7614cb9d53fb8b21128e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-blue-med.prefab using Guid(21e6605d506e7614cb9d53fb8b21128e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7990bb29e50d7ca4ba2bc62939001704') in 0.032285 seconds
+  Import took 0.169459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Lasers/fireball-blue-small.prefab
+  artifactKey: Guid(52dc66b4e0cdaaa42b08668e4210e8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-blue-small.prefab using Guid(52dc66b4e0cdaaa42b08668e4210e8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac4ffb9d77aba1515c16ba2138920d3') in 0.021581 seconds
+  Import took 0.028470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Lasers/fireball-red-tail-big.prefab
+  artifactKey: Guid(f07aa02622a24e548a7f9fb76c74c88c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-tail-big.prefab using Guid(f07aa02622a24e548a7f9fb76c74c88c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4df1669d9e91d53e5fff2866cbef47c') in 0.028879 seconds
+  Import took 0.034041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Lasers/fireball-blue-tail-big.prefab
+  artifactKey: Guid(e4e916d5ff0e0e044b657e444f8ed3b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-blue-tail-big.prefab using Guid(e4e916d5ff0e0e044b657e444f8ed3b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58bcf8af61dabc6a11908dbc16733bc') in 0.033535 seconds
+  Import took 0.039272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Lasers/fireball-red-tail-med.prefab
+  artifactKey: Guid(1a350d47dbc376441a0a45a6750f892f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-tail-med.prefab using Guid(1a350d47dbc376441a0a45a6750f892f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e93f2a74eb21bb4fd7c5f1f8f905388') in 0.025642 seconds
+  Import took 0.030314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Lasers/fireball-blue-tail-med.prefab
+  artifactKey: Guid(c89c706a3b5d94c469787537402ee76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-blue-tail-med.prefab using Guid(c89c706a3b5d94c469787537402ee76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d2c0b3e9cb70377f92725153677872') in 0.025709 seconds
+  Import took 0.031064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Lasers/fireball-blue-tail-small.prefab
+  artifactKey: Guid(10d6aac767cdc3647b568659b3225ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-blue-tail-small.prefab using Guid(10d6aac767cdc3647b568659b3225ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cbb8f73ad71386e0ea05f76367ffb2') in 0.022321 seconds
+  Import took 0.028708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/Lasers/fireball-red-tail-small.prefab
+  artifactKey: Guid(e6635f0bb967e9d41891e835f870805e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-tail-small.prefab using Guid(e6635f0bb967e9d41891e835f870805e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ae5071e90c0deb073c6d712de34eec') in 0.024099 seconds
+  Import took 0.030335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Lasers/fireball-red-small.prefab
+  artifactKey: Guid(70cf00b9401e987428c1436f67e7822b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-small.prefab using Guid(70cf00b9401e987428c1436f67e7822b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfb759f625b2f8753cce69479057936') in 0.024903 seconds
+  Import took 0.029799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Lasers/fireball-red-med.prefab
+  artifactKey: Guid(9dd1bcecc29dd9449b7d9874c921c18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-med.prefab using Guid(9dd1bcecc29dd9449b7d9874c921c18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d429713d6977b9d0c2673d4c4bdbf9') in 0.026103 seconds
+  Import took 0.032085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Lasers/fireball-red-big.prefab
+  artifactKey: Guid(9ebead1edba2a06478d5818cacdf85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-big.prefab using Guid(9ebead1edba2a06478d5818cacdf85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90d86190d8a9af2b4e65a4dad44b5de') in 0.022430 seconds
+  Import took 0.028991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009836 seconds.
+  path: Assets/Lasers/fireball-red-big.prefab
+  artifactKey: Guid(9ebead1edba2a06478d5818cacdf85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lasers/fireball-red-big.prefab using Guid(9ebead1edba2a06478d5818cacdf85ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90d86190d8a9af2b4e65a4dad44b5de') in 0.021345 seconds
+  Import took 0.025588 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002484 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.611 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1796 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.2 MB.
+System memory in use after: 108.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2354.
+Total: 3.133000 ms (FindLiveObjects: 0.199500 ms CreateObjectMapping: 0.074400 ms MarkObjects: 1.721100 ms  DeleteObjects: 1.136800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 165.224630 seconds.
+  path: Assets/VolumetricLines
+  artifactKey: Guid(2918d7e9632150e4c976bdd3463d85f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines using Guid(2918d7e9632150e4c976bdd3463d85f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b31e6daef28e0b1ce946a26f0963d98') in 0.035708 seconds
+  Import took 0.042404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.376490 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline
+  artifactKey: Guid(c8e363cd77bc5b244ade87db01ecf3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline using Guid(c8e363cd77bc5b244ade87db01ecf3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0caa0ebec59d5902901f26d0ac7565') in 0.013679 seconds
+  Import took 0.018227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.116120 seconds.
+  path: Assets/VolumetricLines/Scripts
+  artifactKey: Guid(efda95c08f4370f45ac08e2ee6544043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/Scripts using Guid(efda95c08f4370f45ac08e2ee6544043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2aec8ddd078f513581aa351c685ef9') in 0.011426 seconds
+  Import took 0.016471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.015135 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes
+  artifactKey: Guid(97b47e52d4543a1498fa584c9521396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes using Guid(97b47e52d4543a1498fa584c9521396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00af963fe5bafffeb1476a5d0e264278') in 0.020452 seconds
+  Import took 0.025201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.947790 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/LaserCannon.unity
+  artifactKey: Guid(ad00a3bf6d3c5e94cbc53a7d0d337aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/LaserCannon.unity using Guid(ad00a3bf6d3c5e94cbc53a7d0d337aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48934d950d0032f2a1bc276ef2f9760d') in 0.040224 seconds
+  Import took 0.047817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.287132 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/LineGenerationScripts.unity
+  artifactKey: Guid(5b2755a8fdfb8dc43a73d7fa7608323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/LineGenerationScripts.unity using Guid(5b2755a8fdfb8dc43a73d7fa7608323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3aada29fd1474e20925974869442a4b') in 0.014927 seconds
+  Import took 0.019036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.265950 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/StaticLines.unity
+  artifactKey: Guid(272ba8d0ddc690a49b4f2ca2888387b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/StaticLines.unity using Guid(272ba8d0ddc690a49b4f2ca2888387b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f31ea855b4542aecf727e2d307b21a03') in 0.013808 seconds
+  Import took 0.018098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.429291 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleMaterials
+  artifactKey: Guid(0239c99c45f2ec84eb8dfa6aaa2b2dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleMaterials using Guid(0239c99c45f2ec84eb8dfa6aaa2b2dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b422be2f745521a68e13143b1c5578') in 0.018808 seconds
+  Import took 0.024237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.119407 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs
+  artifactKey: Guid(ce99dc68aa30d104292694c9c24ee6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs using Guid(ce99dc68aa30d104292694c9c24ee6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdf5540efe830d49eba0034a37db05a') in 0.016265 seconds
+  Import took 0.021555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.167379 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/LineStrip-LightSaber.prefab
+  artifactKey: Guid(158489636c6d50d4290c11b03aa00742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/LineStrip-LightSaber.prefab using Guid(158489636c6d50d4290c11b03aa00742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4f0615f2ee2443bcf228c28fc39dbe') in 0.028410 seconds
+  Import took 0.032165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/LineStrip-TextureAdditive.prefab
+  artifactKey: Guid(f0c0d54774d923548af0169ee34520d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/LineStrip-TextureAdditive.prefab using Guid(f0c0d54774d923548af0169ee34520d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1cfe4513873162d4acce988c7a3c82') in 0.012703 seconds
+  Import took 0.017483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-TextureAdditive.prefab
+  artifactKey: Guid(66e0018a9e63c4348b7a340890e5b30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-TextureAdditive.prefab using Guid(66e0018a9e63c4348b7a340890e5b30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0bb78062f19ec55b720bfe5fde98a4') in 0.015962 seconds
+  Import took 0.020806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-TextureAlphaBlended.prefab
+  artifactKey: Guid(6ffb6552b370d4049ada03898e7874ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-TextureAlphaBlended.prefab using Guid(6ffb6552b370d4049ada03898e7874ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b70f629281cc84451d32fa37df0df96') in 0.011632 seconds
+  Import took 0.016442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/LineStrip-TextureAlphaBlended.prefab
+  artifactKey: Guid(7cc673f285fd4a54ba1203712a32a67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/LineStrip-TextureAlphaBlended.prefab using Guid(7cc673f285fd4a54ba1203712a32a67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a8943916e9df6315cb33c6df85898f') in 0.024730 seconds
+  Import took 0.029510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-LightSaber.prefab
+  artifactKey: Guid(11530f2b0a0cd2442949827ecbb622f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-LightSaber.prefab using Guid(11530f2b0a0cd2442949827ecbb622f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71604a526bf4305c1006e5af8c4e8c93') in 0.024456 seconds
+  Import took 0.031522 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001562 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.314 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.5 MB.
+System memory in use after: 107.5 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2350.
+Total: 2.201100 ms (FindLiveObjects: 0.205500 ms CreateObjectMapping: 0.075300 ms MarkObjects: 1.798400 ms  DeleteObjects: 0.119900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 238.804954 seconds.
+  path: Assets/Planets/Planets 2.0 Preview/cyan-planet.png
+  artifactKey: Guid(aa60e8759a614bb45b9bd7678c6094ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets 2.0 Preview/cyan-planet.png using Guid(aa60e8759a614bb45b9bd7678c6094ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c036569645417b2713336d168b368f') in 0.225593 seconds
+  Import took 0.231407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048732 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Water-Planet-wWih-Small-Islands.png
+  artifactKey: Guid(5c7b6fcdc51c1ec4eb1e4d66c3943700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Water-Planet-wWih-Small-Islands.png using Guid(5c7b6fcdc51c1ec4eb1e4d66c3943700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7356f636f996d8ce9a3ce07f2371489d') in 0.031100 seconds
+  Import took 0.034996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020798 seconds.
+  path: Assets/Spaceships/texture
+  artifactKey: Guid(54ec473595322fc4b92dbb0fe0150618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/texture using Guid(54ec473595322fc4b92dbb0fe0150618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7a9136ad20c898c88fcbf379e82282') in 0.009365 seconds
+  Import took 0.013134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045951 seconds.
+  path: Assets/Planets/Planets and Background/earth-like.png
+  artifactKey: Guid(0aab17f474ae0434eb7aff4a29cc0123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/earth-like.png using Guid(0aab17f474ae0434eb7aff4a29cc0123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aeb631ab4baa2d2adbb15ed6240c38f') in 0.031982 seconds
+  Import took 0.035590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022254 seconds.
+  path: Assets/Spaceships/spaceship_sceneSettings.lighting
+  artifactKey: Guid(b8182f0da593f4fbd954a0e65ae7be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/spaceship_sceneSettings.lighting using Guid(b8182f0da593f4fbd954a0e65ae7be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
+ -> (artifact id: '469496b38d77a326d570a8a066cb802d') in 0.013750 seconds
+  Import took 0.017238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019811 seconds.
+  path: Assets/Planets/Demo Scene/Demo.unity
+  artifactKey: Guid(3c26a90bd70209740b43f15d1683d044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Demo Scene/Demo.unity using Guid(3c26a90bd70209740b43f15d1683d044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e9b13ed993d063620af1ad442458ad') in 0.007074 seconds
+  Import took 0.014360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021213 seconds.
+  path: Assets/Planets/Planets and Background/Sand-Planet.png
+  artifactKey: Guid(4a868e28be12a6349a2742aa1909ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Sand-Planet.png using Guid(4a868e28be12a6349a2742aa1909ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee500cd8f6ac4c1adcf200a5e6b7d10') in 0.032055 seconds
+  Import took 0.037211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023376 seconds.
+  path: Assets/Planets/Planets and Background/Dark-PLanet.png
+  artifactKey: Guid(709f6dc460a0f30408be2662721887c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Dark-PLanet.png using Guid(709f6dc460a0f30408be2662721887c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da37a03ba20d0c41449ce27684653300') in 0.030747 seconds
+  Import took 0.034768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022836 seconds.
+  path: Assets/Spaceships/animations/spaceship_8.controller
+  artifactKey: Guid(9125a087326c22c46a2f6bc11c643de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_8.controller using Guid(9125a087326c22c46a2f6bc11c643de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f95353f7e760d3fcb3bebe7d348711fb') in 0.015930 seconds
+  Import took 0.021083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018401 seconds.
+  path: Assets/Planets/Demo Scene/DemoSettings.lighting
+  artifactKey: Guid(70189eeee4ef24206bada41d208bee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Demo Scene/DemoSettings.lighting using Guid(70189eeee4ef24206bada41d208bee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
+ -> (artifact id: 'c5529c0937f115228a68c43cfb0818ba') in 0.008875 seconds
+  Import took 0.012208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015085 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Red Lines PLanet.png
+  artifactKey: Guid(aff35f74e4d308545a00e273b618c84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Red Lines PLanet.png using Guid(aff35f74e4d308545a00e273b618c84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a2f551ebe477a57968404926904718') in 0.027945 seconds
+  Import took 0.031598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039481 seconds.
+  path: Assets/Planets/Flat Planets EPS.7z
+  artifactKey: Guid(690766c4c6a6bfb45be79102ea7a7140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Flat Planets EPS.7z using Guid(690766c4c6a6bfb45be79102ea7a7140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241e02d1162bde8439e41e74f4006aa3') in 0.009858 seconds
+  Import took 0.013039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016803 seconds.
+  path: Assets/Planets/Planets and Background/Space.png
+  artifactKey: Guid(4ecb598b03c4c5b45bea92168edb3474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Space.png using Guid(4ecb598b03c4c5b45bea92168edb3474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ab6ca82f4d86ed4b5ad4d0d33380b8') in 0.026475 seconds
+  Import took 0.030386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.051792 seconds.
+  path: Assets/Planets/Flat Planets AI.7z
+  artifactKey: Guid(60fcdc89512c76b4692e2825b52fe1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Flat Planets AI.7z using Guid(60fcdc89512c76b4692e2825b52fe1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1742f43b880d40ba30ca32f13f42e7ca') in 0.008130 seconds
+  Import took 0.011672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014282 seconds.
+  path: Assets/Spaceships/animations/spaceship7.anim
+  artifactKey: Guid(a78d7a91151e95040a59ca99d0c315a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship7.anim using Guid(a78d7a91151e95040a59ca99d0c315a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91ff155977b5ce5f9320470372d46be') in 0.008564 seconds
+  Import took 0.012102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015499 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Red-Planet-With-Ice.png
+  artifactKey: Guid(946c2d6c1621c1449b842ae06de460b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Red-Planet-With-Ice.png using Guid(946c2d6c1621c1449b842ae06de460b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8f8626455df6798cf25af1f1cb6d0b') in 0.025126 seconds
+  Import took 0.028333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019746 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Sprites
+  artifactKey: Guid(151eaa298267442488aa0ed84210c87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Sprites using Guid(151eaa298267442488aa0ed84210c87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d03c890a3f1091ba9569e1af086249f') in 0.007870 seconds
+  Import took 0.011611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025826 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(65d58a62e8dc24636bae885783997200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(65d58a62e8dc24636bae885783997200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7eedab14a8c5fddf66d31d69ef74b7b') in 0.003552 seconds
+  Import took 0.007451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013915 seconds.
+  path: Assets/Spaceships/animations/spaceship_7.controller
+  artifactKey: Guid(3c175d303a094dd4f9afb9342abf8a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_7.controller using Guid(3c175d303a094dd4f9afb9342abf8a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925ca1782c21a0190190d0ff3ec61ded') in 0.008081 seconds
+  Import took 0.012047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014094 seconds.
+  path: Assets/Spaceships/animations/spaceship5.anim
+  artifactKey: Guid(a33cdc2821645f6499fcd06435433512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship5.anim using Guid(a33cdc2821645f6499fcd06435433512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a8d43f12c43a4c80860a5aa03728a7') in 0.009467 seconds
+  Import took 0.013624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053528 seconds.
+  path: Assets/Planets/Planets and Background With Shadows
+  artifactKey: Guid(6df652796149f1a42b40deb6f451936c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows using Guid(6df652796149f1a42b40deb6f451936c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35d28e9a4403bdaf1402c975096f204') in 0.007858 seconds
+  Import took 0.012060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015339 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/cyan-planet.png
+  artifactKey: Guid(4f98fdc086f0e534aa159f3230263ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/cyan-planet.png using Guid(4f98fdc086f0e534aa159f3230263ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775d1a7f6c3f39196c715bcf75770a69') in 0.022936 seconds
+  Import took 0.026534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033437 seconds.
+  path: Assets/Spaceships/animations/spaceship1.anim
+  artifactKey: Guid(201a8e0abd59e7742978eb577fe6ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship1.anim using Guid(201a8e0abd59e7742978eb577fe6ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d8c8dfc7ef85380680511fb19e4f95') in 0.008776 seconds
+  Import took 0.012302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034800 seconds.
+  path: Assets/Planets/Demo Scene
+  artifactKey: Guid(8dde6798e80d70248b66c953c4d04abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Demo Scene using Guid(8dde6798e80d70248b66c953c4d04abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60c14f77505a161b89a2e47b4a55383') in 0.009103 seconds
+  Import took 0.012248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016055 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Ice-Planet.png
+  artifactKey: Guid(a11c432b67c633f4dbd20598771446b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Ice-Planet.png using Guid(a11c432b67c633f4dbd20598771446b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ca26012ef70b774999dc14a42eb72c') in 0.026077 seconds
+  Import took 0.029684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020504 seconds.
+  path: Assets/Planets/Planets and Background/cyan-planet.png
+  artifactKey: Guid(1eebe61fa30929248bdcda4d7c3c51ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/cyan-planet.png using Guid(1eebe61fa30929248bdcda4d7c3c51ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d14f18cf62dea11ca1c01fff1b9db7a') in 0.022081 seconds
+  Import took 0.025310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018837 seconds.
+  path: Assets/Spaceships/spaceship_scene.unity
+  artifactKey: Guid(a4677fe02a9d4504a872e6199ea9d486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/spaceship_scene.unity using Guid(a4677fe02a9d4504a872e6199ea9d486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae2d56862edba8d436c726e8eb56624') in 0.010886 seconds
+  Import took 0.014082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015557 seconds.
+  path: Assets/Planets/Planets and Background/red-planet-sputnik.png
+  artifactKey: Guid(de9bd78144a44764f99b085846a2e03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/red-planet-sputnik.png using Guid(de9bd78144a44764f99b085846a2e03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafcaf1738f072d290a039845a6dceae') in 0.027062 seconds
+  Import took 0.030316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060162 seconds.
+  path: Assets/Spaceships/animations/spaceship4.anim
+  artifactKey: Guid(48911c053107aca4289a8e31824a657d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship4.anim using Guid(48911c053107aca4289a8e31824a657d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68144eb7ed26afb1617e937e2268a69a') in 0.008889 seconds
+  Import took 0.012056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014803 seconds.
+  path: Assets/Spaceships/animations/spaceship_2.controller
+  artifactKey: Guid(689ad4ef133526b4db5115d8b3eccc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_2.controller using Guid(689ad4ef133526b4db5115d8b3eccc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d9c4fb812e1c502bba31c73854a390') in 0.013218 seconds
+  Import took 0.018337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022039 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/blue-planet.png
+  artifactKey: Guid(7fd37ac138fced546a89a75d728d0710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/blue-planet.png using Guid(7fd37ac138fced546a89a75d728d0710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35acbd61ef8aaa0b05637ae6fc66a953') in 0.151362 seconds
+  Import took 0.155574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022112 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Sand-Planet.png
+  artifactKey: Guid(71ac7bd0a112e0445a75d4cf6d697128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Sand-Planet.png using Guid(71ac7bd0a112e0445a75d4cf6d697128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0022f36169d3259a2f8d4009478539') in 0.027303 seconds
+  Import took 0.031141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024520 seconds.
+  path: Assets/Planets/Planets and Background/Orange-Planet.png
+  artifactKey: Guid(8d93f8b646fad08429a3686590a61bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Orange-Planet.png using Guid(8d93f8b646fad08429a3686590a61bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac83d6fd2fc136389dcf15543c2dfd0') in 0.033946 seconds
+  Import took 0.037747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.088543 seconds.
+  path: Assets/Spaceships/texture/spaceships.psd
+  artifactKey: Guid(8d18f6d2b73e89b4882fbf3bb5aedb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/texture/spaceships.psd using Guid(8d18f6d2b73e89b4882fbf3bb5aedb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6871a1ddc1216d1bc548d0ae1518b72') in 0.179985 seconds
+  Import took 0.183990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053220 seconds.
+  path: Assets/Spaceships/animations/spaceship_5.controller
+  artifactKey: Guid(80fc49152fdf5ea4e846b3cfc5ed80d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_5.controller using Guid(80fc49152fdf5ea4e846b3cfc5ed80d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5189614b0fbab447d5a0df549240359c') in 0.013292 seconds
+  Import took 0.018800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022062 seconds.
+  path: Assets/Planets/Planets and Background/Galaxy.png
+  artifactKey: Guid(7d2d52905e45ae247b3390d0f42fdc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Galaxy.png using Guid(7d2d52905e45ae247b3390d0f42fdc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975811a076bc1331e07eb24c5b981c5e') in 0.030303 seconds
+  Import took 0.034454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020888 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Dark-PLanet.png
+  artifactKey: Guid(2bed99daade80374692348a8299459cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Dark-PLanet.png using Guid(2bed99daade80374692348a8299459cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88751aeb50cd98ade12ff0708f2723c') in 0.022154 seconds
+  Import took 0.025749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020531 seconds.
+  path: Assets/Planets/Planets and Background/Water-Planet-wWih-Small-Islands.png
+  artifactKey: Guid(0a73328190b6a1b4787cc6921bbe0f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Water-Planet-wWih-Small-Islands.png using Guid(0a73328190b6a1b4787cc6921bbe0f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa1db8e5100cf24056f0d367e8c31b9') in 0.027190 seconds
+  Import took 0.030819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020278 seconds.
+  path: Assets/Planets/Planets 2.0 Preview/Red-Lines-PLanet.png
+  artifactKey: Guid(9c36c5cd75ed3e04da7144bd01430bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets 2.0 Preview/Red-Lines-PLanet.png using Guid(9c36c5cd75ed3e04da7144bd01430bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f0d1b96974d42f44c561b396bebf70') in 0.027465 seconds
+  Import took 0.030804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019884 seconds.
+  path: Assets/Planets/Planets and Background/Ice-Planet.png
+  artifactKey: Guid(ef1bf2ecc16140f4195ed991ac4136c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Ice-Planet.png using Guid(ef1bf2ecc16140f4195ed991ac4136c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e4c3986ab84b8caa975fdf5179bb1a') in 0.022589 seconds
+  Import took 0.026188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031551 seconds.
+  path: Assets/Planets/Planets 2.0 Preview/Purple-Planet-wih-Moon.png
+  artifactKey: Guid(65688cd761f6d524d85a1890139563d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets 2.0 Preview/Purple-Planet-wih-Moon.png using Guid(65688cd761f6d524d85a1890139563d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6eec4d83314e8507dc8094f9a962d2') in 0.027605 seconds
+  Import took 0.031509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032001 seconds.
+  path: Assets/Spaceships/animations/spaceship3.anim
+  artifactKey: Guid(efc24f7e15a4df34bb03fabfde6ed9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship3.anim using Guid(efc24f7e15a4df34bb03fabfde6ed9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5638b51d39f19406f5dca9c2281519') in 0.008444 seconds
+  Import took 0.011985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014140 seconds.
+  path: Assets/Spaceships/animations/spaceship_6.controller
+  artifactKey: Guid(b74f709d29939444dadd241e9456c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_6.controller using Guid(b74f709d29939444dadd241e9456c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de327224bf23de168e2f9764814a370') in 0.010481 seconds
+  Import took 0.014390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013487 seconds.
+  path: Assets/Planets/Planets 2.0 Preview
+  artifactKey: Guid(5137661ab7401d04fb884e695326335a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets 2.0 Preview using Guid(5137661ab7401d04fb884e695326335a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d6658fb36ba94ba8fad442cadccb58') in 0.008244 seconds
+  Import took 0.011684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027032 seconds.
+  path: Assets/Spaceships/animations/spaceships_0.controller
+  artifactKey: Guid(2ee4c1b0f62dfba47b8ac50b6acf5640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceships_0.controller using Guid(2ee4c1b0f62dfba47b8ac50b6acf5640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86968856fe98c57b43f58d3e64833fed') in 0.009565 seconds
+  Import took 0.012825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016510 seconds.
+  path: Assets/Planets/Planets and Background/Sun.png
+  artifactKey: Guid(d1633d80f997845418c21db664ba138f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Sun.png using Guid(d1633d80f997845418c21db664ba138f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587729dc62d72b6302c788045d1957ab') in 0.026058 seconds
+  Import took 0.029516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018029 seconds.
+  path: Assets/Planets/Planets and Background
+  artifactKey: Guid(a456fe86d78188e4f99ae117474ab9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background using Guid(a456fe86d78188e4f99ae117474ab9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdeefdcf9c0de6215f37fcb13ef71fcf') in 0.008105 seconds
+  Import took 0.011437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015929 seconds.
+  path: Assets/Planets/Planets 2.0 Preview/Frost-Planet.png
+  artifactKey: Guid(da11ae7884684ca4c9c59ac186552277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets 2.0 Preview/Frost-Planet.png using Guid(da11ae7884684ca4c9c59ac186552277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5b4a7df7c56da9bef498cfee92aa0c') in 0.039703 seconds
+  Import took 0.043354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030272 seconds.
+  path: Assets/Spaceships/animations/spaceship_3.controller
+  artifactKey: Guid(83e944e7ea7307748a4ddbdf6d939610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_3.controller using Guid(83e944e7ea7307748a4ddbdf6d939610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56778a31a0c06ebf6cfd5525e495cbf8') in 0.008230 seconds
+  Import took 0.012346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022361 seconds.
+  path: Assets/Planets/Planets and Background/Red-Planet-1.png
+  artifactKey: Guid(765aab9d7d5f75f478521312f0b8a3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Red-Planet-1.png using Guid(765aab9d7d5f75f478521312f0b8a3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28798a5ccd615563753d19b225eb413f') in 0.025875 seconds
+  Import took 0.029838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020831 seconds.
+  path: Assets/Planets/Planets 2.0 Preview/Cream-Violet-Planet.png
+  artifactKey: Guid(9e01db602d98aa044bb852288e243f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets 2.0 Preview/Cream-Violet-Planet.png using Guid(9e01db602d98aa044bb852288e243f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623b4ebe0b36ae2217ae17ab66417ac3') in 0.035979 seconds
+  Import took 0.039654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032124 seconds.
+  path: Assets/Planets/Planets and Background/blue-planet.png
+  artifactKey: Guid(8ff5851d96e353540b1e6d34f6dafe7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/blue-planet.png using Guid(8ff5851d96e353540b1e6d34f6dafe7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3335750d72ff4084090ef81e8a49e139') in 0.022227 seconds
+  Import took 0.025506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043819 seconds.
+  path: Assets/Planets/Planets and Background/Lava-PLanet.png
+  artifactKey: Guid(ddc556a241acd514ba8409f6e064201c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Lava-PLanet.png using Guid(ddc556a241acd514ba8409f6e064201c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83310a7e53408f75e4a4beed93fcb5d9') in 0.026211 seconds
+  Import took 0.029990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022966 seconds.
+  path: Assets/Planets/Planets and Background/Purple-Planet.png
+  artifactKey: Guid(c135213a5c54f2f4984eaa105cc33b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Purple-Planet.png using Guid(c135213a5c54f2f4984eaa105cc33b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd7377c85a92713ae62258ac2b3b839') in 0.159082 seconds
+  Import took 0.164893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027257 seconds.
+  path: Assets/Planets/Planets and Background/Storm-Planet.png
+  artifactKey: Guid(01e466e2fb6eea34ea00e20acc789c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Storm-Planet.png using Guid(01e466e2fb6eea34ea00e20acc789c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d681ca16c7e49087b1f9e2b535a1ff') in 0.030878 seconds
+  Import took 0.035556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024004 seconds.
+  path: Assets/Spaceships/animations/spaceship8.anim
+  artifactKey: Guid(d143e1a39ed6d2042aae1811727e5834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship8.anim using Guid(d143e1a39ed6d2042aae1811727e5834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151ca5a3c94533dcc2ac6b048e0a047f') in 0.012361 seconds
+  Import took 0.016616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009668 seconds.
+  path: Assets/2D Pixel Spaceship - Two Small Ships/Sprites/sprites.png
+  artifactKey: Guid(8aeb9e233fbb8f14db39770841b78b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Spaceship - Two Small Ships/Sprites/sprites.png using Guid(8aeb9e233fbb8f14db39770841b78b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594a2f1e6d3b081e4b0dc69750211220') in 0.064155 seconds
+  Import took 0.068043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021275 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Orange-Planet.png
+  artifactKey: Guid(2ac0db94ff1d5c041bafd13526beb3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Orange-Planet.png using Guid(2ac0db94ff1d5c041bafd13526beb3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ee161a68b5e460c318972c5fb0f910') in 0.030745 seconds
+  Import took 0.034317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.132789 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Storm-Planet 1.png
+  artifactKey: Guid(ecf7b80712cebd042820b11f9a6f3049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Storm-Planet 1.png using Guid(ecf7b80712cebd042820b11f9a6f3049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328392c4ca435b10eb0328ebe19bb52c') in 0.026216 seconds
+  Import took 0.030485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023112 seconds.
+  path: Assets/Planets/Planets and Background/white-dwarf-star.png
+  artifactKey: Guid(a27406c97e517164cbd7003354e6739c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/white-dwarf-star.png using Guid(a27406c97e517164cbd7003354e6739c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33de01732ba4e8fc47b124c9bded7a4') in 0.029494 seconds
+  Import took 0.035232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022542 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/red-planet-sputnik.png
+  artifactKey: Guid(1869fb7484aa0c143afc697469c77982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/red-planet-sputnik.png using Guid(1869fb7484aa0c143afc697469c77982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd183421b449e40c0d2960fa0258cffe1') in 0.024478 seconds
+  Import took 0.029202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026684 seconds.
+  path: Assets/Spaceships/animations/spaceship6.anim
+  artifactKey: Guid(163286c7d332b3e4296a251fce1de9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship6.anim using Guid(163286c7d332b3e4296a251fce1de9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cd6b12b44f5cd2cf2ab1a08a3797c6') in 0.012909 seconds
+  Import took 0.018872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027903 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/earth.png
+  artifactKey: Guid(4dc75a220dfadec47be9a6b70272c152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/earth.png using Guid(4dc75a220dfadec47be9a6b70272c152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1fbb304d9dd95fb7ec267263fd38695') in 0.026989 seconds
+  Import took 0.031195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033519 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Red-Planet-1.png
+  artifactKey: Guid(e649371ffe68bfa4c8a5f18c1e0186f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Red-Planet-1.png using Guid(e649371ffe68bfa4c8a5f18c1e0186f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e9f60792b7b9fa152bb647d941bcad') in 0.021557 seconds
+  Import took 0.025505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019463 seconds.
+  path: Assets/Spaceships/animations/spaceship_4.controller
+  artifactKey: Guid(4d24b1bde8e367a42bb799ddba01416e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship_4.controller using Guid(4d24b1bde8e367a42bb799ddba01416e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd50de5cb0a9eab67db7ce3bb579413') in 0.008089 seconds
+  Import took 0.012719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029167 seconds.
+  path: Assets/Planets/Planets and Background With Shadows/Purple-Planet.png
+  artifactKey: Guid(f61845ff0fcabb149af7e9f6d8b660ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background With Shadows/Purple-Planet.png using Guid(f61845ff0fcabb149af7e9f6d8b660ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d70eb0b043fe60611f6abc2733573b') in 0.023735 seconds
+  Import took 0.028111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044395 seconds.
+  path: Assets/Spaceships/animations/spaceship2.anim
+  artifactKey: Guid(e0b9e69a02037594d93aa7510ab0614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/spaceship2.anim using Guid(e0b9e69a02037594d93aa7510ab0614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3c46f006edf4b06a3c025c87b99abd') in 0.008570 seconds
+  Import took 0.012189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014057 seconds.
+  path: Assets/Planets
+  artifactKey: Guid(05a72a0fad33d4c3388bba01c1f4124a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets using Guid(05a72a0fad33d4c3388bba01c1f4124a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86994ebc8d5b31f1b69644c76c93a6df') in 0.008230 seconds
+  Import took 0.012001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013503 seconds.
+  path: Assets/Spaceships/animations/shield.controller
+  artifactKey: Guid(e33bb7f82b235294282149a14bc4fc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spaceships/animations/shield.controller using Guid(e33bb7f82b235294282149a14bc4fc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d935e59316296a4c403c3e613479ee5') in 0.011402 seconds
+  Import took 0.015369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018336 seconds.
+  path: Assets/Planets/Planets and Background/Red-Planet-With-Ice.png
+  artifactKey: Guid(c37b6465dcc722340a3a437ce8dbbe96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Planets/Planets and Background/Red-Planet-With-Ice.png using Guid(c37b6465dcc722340a3a437ce8dbbe96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77748b1db6fd2e66d92502b00bef049') in 0.067709 seconds
+  Import took 0.071885 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
