@@ -19,7 +19,11 @@ public class ScreenBoundary : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name.Equals("Player")) {
-            
+            GameObject player = GameObject.Find("Player");
+            float magnitude = 10000f;
+            var force = transform.position - player.transform.position;
+            force.Normalize();
+            player.GetComponent<Rigidbody2D>().AddRelativeForce(force * magnitude);
         }
     }
 }
