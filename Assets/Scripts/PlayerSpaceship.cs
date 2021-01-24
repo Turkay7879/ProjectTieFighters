@@ -5,13 +5,10 @@ using UnityEngine;
 public class PlayerSpaceship : MonoBehaviour
 {
     public float Speed = 10.0f;
-    Vector2 position;
     public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        position = transform.position;
-
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -24,10 +21,16 @@ public class PlayerSpaceship : MonoBehaviour
     void Movement()
     {
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * Speed, 0);
+        // AddRelativeForce(), y ekseni pozisyonunu da etkiliyor?
+        Vector3 position = Camera.main.WorldToViewportPoint(transform.position);
+        position.x = Mathf.Clamp01(position.x);
+        transform.position = Camera.main.ViewportToWorldPoint(position);
     }
 
     void Fire()
     {
 
     }
+
+    
 }
