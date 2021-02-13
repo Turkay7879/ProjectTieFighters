@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
+    GameManagement Management;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
     }
 
     // Update is called once per frame
@@ -18,10 +19,13 @@ public class Laser : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("Spaceship"))
+        if (collision.tag.Equals("Enemy"))
         {
             Destroy(GameObject.Find(collision.name));
             Destroy(GameObject.Find("Laser1(Clone)"));
+            int tempCount = Management.EnemyCount;
+            tempCount--;
+            Management.EnemyCount = tempCount;
         }
     }
 }
