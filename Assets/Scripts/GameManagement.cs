@@ -26,6 +26,7 @@ public class GameManagement : MonoBehaviour
     {
         if (EnemyCount == 0)
         {
+            GameObject.Destroy(EnemyGroup);
             Invoke("CreateEnemies", 2.0f);
         }
             
