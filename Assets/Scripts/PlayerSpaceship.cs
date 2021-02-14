@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayerSpaceship : MonoBehaviour
 {
-    public float Speed = 10.0f;
+    public float Speed = 10.0f, laserSpeed = 10.0f;
+    private float FireDelay = 0.25f, FireInterval = 0.5f;
+    private bool StartedFiring = false;
     public Rigidbody2D rb;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,7 @@ public class PlayerSpaceship : MonoBehaviour
     void Update()
     {
         Movement();
+
     }
 
     void Movement()
@@ -26,8 +31,27 @@ public class PlayerSpaceship : MonoBehaviour
 
     void Fire()
     {
-
+        GameObject laser1 = (GameObject)Resources.Load("Laser1", typeof(GameObject));
+        GameObject laser = Instantiate(laser1, new Vector3(transform.position.x, transform.position.y + 1.075f, 0), Quaternion.identity);
+        laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
+        
     }
 
-    
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy") && !StartedFiring)
+        {
+            InvokeRepeating("Fire", FireDelay, FireInterval);
+            StartedFiring = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy") && StartedFiring)
+        {
+            CancelInvoke();
+            StartedFiring = false;
+        }
+    }
 }
