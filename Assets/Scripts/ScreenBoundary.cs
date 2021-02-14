@@ -26,9 +26,9 @@ public class ScreenBoundary : MonoBehaviour
             player.GetComponent<Rigidbody2D>().AddRelativeForce(force * magnitude);
         }
 
-        else if(collision.name.Equals("Laser1(Clone)"))
+        else if(collision.tag.Equals("Laser"))
         {
-            Destroy(GameObject.Find("Laser1(Clone)"));
+            Destroy(GameObject.Find(collision.name));
         }
 
     }

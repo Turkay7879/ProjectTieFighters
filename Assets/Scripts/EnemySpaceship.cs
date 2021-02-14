@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemySpaceship : MonoBehaviour
 {
-    public float laserSpeed = 0.0f;
+    public float laserSpeed = 10.0f;
+    private float FireDelay = 0.75f, FireInterval = 1.00f;
+    private bool StartedFiring = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +16,22 @@ public class EnemySpaceship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*if (!StartedFiring)         // düþmanlarýn hepsi ayný anda periodik bir þekilde ateþ eder
+        {
+            InvokeRepeating("EnemyFire", FireDelay, FireInterval);
+            StartedFiring = true;
+        }*/
+
+        if (Input.GetKeyDown(KeyCode.F))   // F ye basýnca düþmanlarýn hepsi ateþ eder
+        {
+            Invoke("EnemyFire", 0);
+        }
     }
 
-    void Fire()
+    void EnemyFire()
     {
-        
+        GameObject laser2 = (GameObject)Resources.Load("Laser2", typeof(GameObject));
+        GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.075f, 0), Quaternion.identity);
+        enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
     }
 }

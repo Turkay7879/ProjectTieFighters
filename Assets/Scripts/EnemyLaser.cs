@@ -15,4 +15,11 @@ public class EnemyLaser : MonoBehaviour
     {
         
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name.Equals("Boundary"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
