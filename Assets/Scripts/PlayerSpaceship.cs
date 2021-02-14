@@ -21,6 +21,7 @@ public class PlayerSpaceship : MonoBehaviour
     void Movement()
     {
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * Speed, 0);
+       
     }
 
     void Fire()
