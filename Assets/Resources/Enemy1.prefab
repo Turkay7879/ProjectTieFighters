@@ -144,6 +144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserSpeed: 10
+  rb: {fileID: 0}
+  Speed: 2
+  MoveTime: 2
 --- !u!50 &5149548133072217401
 Rigidbody2D:
   serializedVersion: 4

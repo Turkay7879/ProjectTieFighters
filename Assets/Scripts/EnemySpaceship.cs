@@ -6,12 +6,14 @@ public class EnemySpaceship : MonoBehaviour
 {
     public float laserSpeed = 10.0f;
     public Rigidbody2D rb;
-    public float Speed = 0.4f; //magnitude of speed can be changed
+    public float Speed = 2.00f; //magnitude of speed can be changed
+    public float MoveTime = 2.00f;
    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(EnemyMove(0));
     }
 
     // Update is called once per frame
@@ -21,8 +23,18 @@ public class EnemySpaceship : MonoBehaviour
         {
             Invoke("EnemyFire", 0);
         }
-        rb.velocity = new Vector2(0, -Speed);
-       
+    }
+
+    public IEnumerator EnemyMove(float time)
+    {   // MoveTime ve Speed orantýlý olmalýdýr. Aksi halde düþmanlar ekranýn dýþýna çýkabilir.
+        StartingMove:
+        rb.velocity = Vector2.left * Speed;
+        yield return new WaitForSeconds(MoveTime);
+        rb.velocity = Vector2.right * Speed;
+        yield return new WaitForSeconds(MoveTime * 2);
+        rb.velocity = Vector2.left * Speed;
+        yield return new WaitForSeconds(MoveTime);
+        goto StartingMove; 
     }
 
     public void EnemyFire()

@@ -27,10 +27,6 @@ public class Laser : MonoBehaviour
             tempCount--;
             Management.EnemyCount = tempCount;
         }
-        else if (collision.name.Equals("Laser2(Clone)"))
-        {
-            Destroy(GameObject.Find(collision.name));
-            Destroy(GameObject.Find("Laser1(Clone)"));
-        }
+        
     }
 }
