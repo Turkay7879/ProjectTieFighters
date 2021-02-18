@@ -40,7 +40,25 @@ public class EnemySpaceship : MonoBehaviour
     public void EnemyFire()
     {
         GameObject laser2 = (GameObject)Resources.Load("Laser2", typeof(GameObject));
-        GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.075f, 0), Quaternion.identity);
-        enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        if (this.gameObject.tag.Equals("Enemy1"))
+        {
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.075f, 0), Quaternion.identity);
+            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        }
+
+        if (this.gameObject.tag.Equals("Enemy2"))
+        {
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.244f, 0), Quaternion.identity);
+            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        }
+
+        if (this.gameObject.tag.Equals("Enemy3"))
+        {
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x - 0.8235f, transform.position.y - 1.31994f, 0), Quaternion.identity);
+            GameObject enemylaser2 = Instantiate(laser2, new Vector3(transform.position.x + 0.8235f, transform.position.y - 1.31994f, 0), Quaternion.identity);
+            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+            enemylaser2.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        }
+
     }
 }

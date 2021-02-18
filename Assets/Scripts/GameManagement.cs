@@ -7,28 +7,40 @@ public class GameManagement : MonoBehaviour
     public string Difficulty;
     public float EnemySpeed = 2.5f;
     public int Lives = 3, EnemyCount;
-    GameObject EnemyGroup;
+    GameObject EnemyGroup1, EnemyGroup2, EnemyGroup3;
     private float FireDelay = 0.75f, FireInterval = 1.00f;
     private bool StartedFiring = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Geçici, kullanýcýnýn seçimine býrakýlacak
         Difficulty = "Easy";
         //Difficulty = "Medium";
         //Difficulty = "Hard";
-        GameObject Group1Prefab = (GameObject)Resources.Load("Group1", typeof(GameObject));
-        EnemyGroup = Instantiate(Group1Prefab, new Vector3(0f, 6f, -1.89f), Quaternion.identity); // Örnek koordinatlar
-        EnemyCount = 7;
+
+        if (Difficulty.Equals("Easy"))
+            EasyMode();
+        else if (Difficulty.Equals("Medium"))
+            MediumMode();
+        else
+            HardMode();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Lives == 0)
+        {
+            Time.timeScale = 0;
+        }
+
         if (EnemyCount == 0)
         {
-            GameObject.Destroy(EnemyGroup);
+            if (Difficulty.Equals("Easy"))
+            {
+                GameObject.Destroy(EnemyGroup1);
+            }
+               
             Invoke("CreateEnemies", 2.0f);
         }
 
@@ -37,21 +49,18 @@ public class GameManagement : MonoBehaviour
             InvokeRepeating("randomFire", FireDelay, FireInterval);
             StartedFiring = true;
         }
-
     }
 
     public void CreateEnemies()
     {
-        GameObject Group1Prefab = (GameObject)Resources.Load("Group1", typeof(GameObject));
-        EnemyGroup = Instantiate(Group1Prefab, new Vector3(0f, 6f, -1.89f), Quaternion.identity);
-        EnemyCount = 7;
+        if (Difficulty.Equals("Easy"))
+        {
+            GameObject Group1Prefab = (GameObject)Resources.Load("Group1", typeof(GameObject));
+            EnemyGroup1 = Instantiate(Group1Prefab, new Vector3(0f, 7.5f, -1.89f), Quaternion.identity);
+            EnemyCount = 7;
+        }
         CancelInvoke();
         StartedFiring = false;
-        // Instantiate ile düþmanlarý oluþtur
-        // y ve x koordinatlarý arasýnda minimum 1.5f fark olmalý (Birbirleriyle çakýþmamalarý için)
-        // x koordinatlarý arasýndaki fark düþman sayýsýna baðlý deðiþebilir
-        // Max. sýnýr y = 7.5, daha fazlasý ekranýn dýþýna çýkabilir (Ekran sýnýrý colliderý ile çakýþma durumu)
-        // z koordinatý -1.89, fix
     }
 
     public void EasyMode()

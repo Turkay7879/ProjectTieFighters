@@ -19,13 +19,13 @@ public class Laser : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag.Equals("Enemy"))
+        if (collision.tag.Equals("Enemy1") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
             Destroy(GameObject.Find(collision.name));
-            Destroy(GameObject.Find("Laser1(Clone)"));
             int tempCount = Management.EnemyCount;
             tempCount--;
             Management.EnemyCount = tempCount;
+            Destroy(this.gameObject);
         }
         
     }

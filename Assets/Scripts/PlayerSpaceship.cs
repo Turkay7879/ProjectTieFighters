@@ -39,7 +39,7 @@ public class PlayerSpaceship : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && !StartedFiring)
+        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3")) && !StartedFiring)
         {
             InvokeRepeating("Fire", FireDelay, FireInterval);
             StartedFiring = true;
@@ -48,7 +48,7 @@ public class PlayerSpaceship : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && StartedFiring)
+        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3")) && StartedFiring)
         {
             CancelInvoke();
             StartedFiring = false;
