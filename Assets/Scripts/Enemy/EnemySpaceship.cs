@@ -19,10 +19,7 @@ public class EnemySpaceship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))   // F ye basýnca düþmanlarýn hepsi ateþ eder
-        {
-            Invoke("EnemyFire", 0);
-        }
+       
     }
 
     public IEnumerator EnemyMove(float time)

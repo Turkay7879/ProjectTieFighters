@@ -14,6 +14,7 @@ public class GameManagement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        EnemyCount = 0;
         Difficulty = "Easy";
         //Difficulty = "Medium";
         //Difficulty = "Hard";
@@ -57,7 +58,17 @@ public class GameManagement : MonoBehaviour
         {
             GameObject Group1Prefab = (GameObject)Resources.Load("Group1", typeof(GameObject));
             EnemyGroup1 = Instantiate(Group1Prefab, new Vector3(0f, 7.5f, -1.89f), Quaternion.identity);
-            EnemyCount = 7;
+            for (int i = 0; i < 7; i++)
+            {
+                GameObject.Find("Group1-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
+                EnemyCount++;
+            }
+            EnemyGroup2 = Instantiate(Group1Prefab, new Vector3(0f, 6.0f, -1.89f), Quaternion.identity);
+            for (int i = 0; i < 7; i++)
+            {
+                GameObject.Find("Group1-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
+                EnemyCount++;
+            }
         }
         CancelInvoke();
         StartedFiring = false;
@@ -83,13 +94,13 @@ public class GameManagement : MonoBehaviour
 
     public void randomFire()
     {
-        int num1 = Random.Range(0, 7);
-        int num2 = Random.Range(0, 7);
-        int num3 = Random.Range(0, 7);
+        int num1 = Random.Range(0, 14);
+        int num2 = Random.Range(0, 14);
+        int num3 = Random.Range(0, 14);
 
-        GameObject ship1 = GameObject.Find("Group1-" + num1.ToString());
-        GameObject ship2 = GameObject.Find("Group1-" + num2.ToString());
-        GameObject ship3 = GameObject.Find("Group1-" + num3.ToString());
+        GameObject ship1 = GameObject.Find("Enemy" + num1.ToString());
+        GameObject ship2 = GameObject.Find("Enemy" + num2.ToString());
+        GameObject ship3 = GameObject.Find("Enemy" + num3.ToString());
 
 
         if (ship1 != null)
