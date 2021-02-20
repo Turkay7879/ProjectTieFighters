@@ -8,30 +8,39 @@ public class EnemySpaceship : MonoBehaviour
     public Rigidbody2D rb;
     public float Speed = 2.00f; //magnitude of speed can be changed
     public float MoveTime = 2.00f;
+<<<<<<< HEAD
     private bool isCollided = false;//düþman gemisinin önünde düþman varsa ateþ etmemesi için bool.
+=======
+    GameManagement gameManagement;
+
+>>>>>>> 632543c5aa93bd12f1da8bba86a15ce67e3d0fe5
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(EnemyMove(0));
+        gameManagement = GameObject.Find("GameManagement").GetComponent<GameManagement>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        if (!gameManagement.Difficulty.Equals("Easy"))
+        {
+            transform.position += Vector3.down * Time.deltaTime * 0.50f;
+        }
     }
 
     public IEnumerator EnemyMove(float time)
     {   // MoveTime ve Speed orantýlý olmalýdýr. Aksi halde düþmanlar ekranýn dýþýna çýkabilir.
-        StartingMove:
-        rb.velocity = Vector2.left * Speed;
-        yield return new WaitForSeconds(MoveTime);
-        rb.velocity = Vector2.right * Speed;
-        yield return new WaitForSeconds(MoveTime * 2);
-        rb.velocity = Vector2.left * Speed;
-        yield return new WaitForSeconds(MoveTime);
-        goto StartingMove; 
+            StartingMove:
+            rb.velocity = Vector2.left * Speed;
+            yield return new WaitForSeconds(MoveTime);
+            rb.velocity = Vector2.right * Speed;
+            yield return new WaitForSeconds(MoveTime * 2);
+            rb.velocity = Vector2.left * Speed;
+            yield return new WaitForSeconds(MoveTime);
+            goto StartingMove; 
     }
 
     public void EnemyFire()
