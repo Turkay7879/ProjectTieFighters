@@ -10,7 +10,6 @@ public class GameManagement : MonoBehaviour
     GameObject EnemyGroup1, EnemyGroup2, EnemyGroup3;
     private float FireDelay = 0.75f, FireInterval = 1.00f;
     private bool StartedFiring = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +39,7 @@ public class GameManagement : MonoBehaviour
             if (Difficulty.Equals("Easy"))
             {
                 GameObject.Destroy(EnemyGroup1);
+                GameObject.Destroy(EnemyGroup2);
             }
                
             Invoke("CreateEnemies", 2.0f);
@@ -47,8 +47,10 @@ public class GameManagement : MonoBehaviour
 
         if (!StartedFiring)        // düþmanlarýn hepsi ayný anda periodik bir þekilde ateþ eder
         {
+           
             InvokeRepeating("randomFire", FireDelay, FireInterval);
             StartedFiring = true;
+            
         }
     }
 
@@ -119,5 +121,4 @@ public class GameManagement : MonoBehaviour
         }
 
     }
-
 }
