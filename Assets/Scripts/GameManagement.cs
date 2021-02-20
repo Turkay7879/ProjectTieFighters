@@ -14,9 +14,9 @@ public class GameManagement : MonoBehaviour
     void Start()
     {
         EnemyCount = 0;
-        Difficulty = "Easy";
+        //Difficulty = "Easy";
         //Difficulty = "Medium";
-        //Difficulty = "Hard";
+        Difficulty = "Hard";
 
         if (Difficulty.Equals("Easy"))
             EasyMode();
@@ -39,7 +39,11 @@ public class GameManagement : MonoBehaviour
             if (Difficulty.Equals("Easy"))
             {
                 GameObject.Destroy(EnemyGroup1);
+<<<<<<< HEAD
                 GameObject.Destroy(EnemyGroup2);
+=======
+                GameManagement.Destroy(EnemyGroup2);
+>>>>>>> 632543c5aa93bd12f1da8bba86a15ce67e3d0fe5
             }
                
             Invoke("CreateEnemies", 2.0f);
@@ -55,7 +59,7 @@ public class GameManagement : MonoBehaviour
     }
 
     public void CreateEnemies()
-    {
+    {   
         if (Difficulty.Equals("Easy"))
         {
             GameObject Group1Prefab = (GameObject)Resources.Load("Group1", typeof(GameObject));
@@ -69,6 +73,39 @@ public class GameManagement : MonoBehaviour
             for (int i = 0; i < 7; i++)
             {
                 GameObject.Find("Group1-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
+                EnemyCount++;
+            }
+        }
+        else if (Difficulty.Equals("Medium"))
+        {
+            GameObject Group2Prefab = (GameObject)Resources.Load("Group2", typeof(GameObject));
+            EnemyGroup1 = Instantiate(Group2Prefab, new Vector3(0f, 7f, -1.89f), Quaternion.identity);
+            for (int i = 0; i < 7; i++)
+            {
+                GameObject.Find("Group2-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
+                EnemyCount++;
+            }
+            EnemyGroup2 = Instantiate(Group2Prefab, new Vector3(0f, 4.9f, -1.89f), Quaternion.identity);
+            for (int i = 0; i < 7; i++)
+            {
+                GameObject.Find("Group2-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
+                EnemyCount++;
+            }
+        }
+        else
+        {
+            GameObject Group2Prefab = (GameObject)Resources.Load("Group2", typeof(GameObject));
+            EnemyGroup1 = Instantiate(Group2Prefab, new Vector3(0f, 7f, -1.89f), Quaternion.identity);
+            for (int i = 0; i < 7; i++)
+            {
+                GameObject.Find("Group2-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
+                EnemyCount++;
+            }
+            GameObject Group3Prefab = (GameObject)Resources.Load("Group3", typeof(GameObject));
+            EnemyGroup2 = Instantiate(Group3Prefab, new Vector3(0f, 4.7f, -1.89f), Quaternion.identity);
+            for (int i = 0; i < 5; i++)
+            {
+                GameObject.Find("Group3-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
                 EnemyCount++;
             }
         }
@@ -86,12 +123,20 @@ public class GameManagement : MonoBehaviour
 
     public void MediumMode()
     {
-
+        if (EnemyCount == 0)
+        {
+            // Oyunun en baþýndaysak veya tüm düþmanlar yok edildiyse yeni düþman grubu oluþturulmalý
+            CreateEnemies();
+        }
     }
 
     public void HardMode()
     {
-
+        if (EnemyCount == 0)
+        {
+            // Oyunun en baþýndaysak veya tüm düþmanlar yok edildiyse yeni düþman grubu oluþturulmalý
+            CreateEnemies();
+        }
     }
 
     public void randomFire()
