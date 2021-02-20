@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 7114272715148228025}
   - component: {fileID: 7465121686060631414}
   - component: {fileID: 2724341895285651075}
+  - component: {fileID: 3326985308798683848}
   m_Layer: 0
   m_Name: Group2-0
   m_TagString: Enemy2
@@ -292,6 +293,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &3326985308798683848
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938786535192592173}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221961025962165
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +326,7 @@ GameObject:
   - component: {fileID: 7126221961025962169}
   - component: {fileID: 7126221961025962168}
   - component: {fileID: 7126221961025962171}
+  - component: {fileID: 6389465269877905174}
   m_Layer: 0
   m_Name: Group2-6
   m_TagString: Enemy2
@@ -420,6 +443,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &6389465269877905174
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126221961025962165}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221961048010139
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +923,7 @@ GameObject:
   - component: {fileID: 7126221961550031113}
   - component: {fileID: 7126221961550031112}
   - component: {fileID: 7126221961550031115}
+  - component: {fileID: 5250288192329841002}
   m_Layer: 0
   m_Name: Group2-5
   m_TagString: Enemy2
@@ -995,6 +1040,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &5250288192329841002
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126221961550031109}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221961664074005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,6 +1155,7 @@ GameObject:
   - component: {fileID: 7126221961742443162}
   - component: {fileID: 7126221961742443157}
   - component: {fileID: 7126221961742443156}
+  - component: {fileID: 1578383890130657316}
   m_Layer: 0
   m_Name: Group2-1
   m_TagString: Enemy2
@@ -1205,6 +1272,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &1578383890130657316
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126221961742443158}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221961868459514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1305,7 @@ GameObject:
   - component: {fileID: 7126221961868459518}
   - component: {fileID: 7126221961868459513}
   - component: {fileID: 7126221961868459512}
+  - component: {fileID: 4489519438207857300}
   m_Layer: 0
   m_Name: Group2-4
   m_TagString: Enemy2
@@ -1333,6 +1422,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &4489519438207857300
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126221961868459514}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221962066608839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1455,7 @@ GameObject:
   - component: {fileID: 7126221962066608843}
   - component: {fileID: 7126221962066608842}
   - component: {fileID: 7126221962066608837}
+  - component: {fileID: 4841646071792353022}
   m_Layer: 0
   m_Name: Group2-3
   m_TagString: Enemy2
@@ -1461,6 +1572,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &4841646071792353022
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126221962066608839}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221962177143034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,6 +1769,7 @@ GameObject:
   - component: {fileID: 7126221962469036335}
   - component: {fileID: 7126221962469036334}
   - component: {fileID: 7126221962469036329}
+  - component: {fileID: 5356744752291932445}
   m_Layer: 0
   m_Name: Group2-2
   m_TagString: Enemy2
@@ -1753,6 +1886,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47918546, y: 0.73337346}
   m_EdgeRadius: 0
+--- !u!50 &5356744752291932445
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126221962469036331}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7126221962712050699
 GameObject:
   m_ObjectHideFlags: 0
