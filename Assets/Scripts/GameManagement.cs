@@ -39,11 +39,8 @@ public class GameManagement : MonoBehaviour
             if (Difficulty.Equals("Easy"))
             {
                 GameObject.Destroy(EnemyGroup1);
-<<<<<<< HEAD
                 GameObject.Destroy(EnemyGroup2);
-=======
                 GameManagement.Destroy(EnemyGroup2);
->>>>>>> 632543c5aa93bd12f1da8bba86a15ce67e3d0fe5
             }
                
             Invoke("CreateEnemies", 2.0f);

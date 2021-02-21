@@ -8,12 +8,9 @@ public class EnemySpaceship : MonoBehaviour
     public Rigidbody2D rb;
     public float Speed = 2.00f; //magnitude of speed can be changed
     public float MoveTime = 2.00f;
-<<<<<<< HEAD
     private bool isCollided = false;//düþman gemisinin önünde düþman varsa ateþ etmemesi için bool.
-=======
     GameManagement gameManagement;
 
->>>>>>> 632543c5aa93bd12f1da8bba86a15ce67e3d0fe5
     // Start is called before the first frame update
     void Start()
     {
