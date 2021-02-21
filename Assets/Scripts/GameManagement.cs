@@ -14,10 +14,8 @@ public class GameManagement : MonoBehaviour
     void Start()
     {
         EnemyCount = 0;
-        //Difficulty = "Easy";
-        //Difficulty = "Medium";
-        Difficulty = "Hard";
-
+        Difficulty = GetComponent<Difficulty>().GetDifficulty();
+        Debug.Log(Difficulty);
         if (Difficulty.Equals("Easy"))
             EasyMode();
         else if (Difficulty.Equals("Medium"))
