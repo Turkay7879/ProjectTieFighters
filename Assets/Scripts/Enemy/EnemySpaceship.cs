@@ -9,6 +9,7 @@ public class EnemySpaceship : MonoBehaviour
     public float Speed = 2.00f; //magnitude of speed can be changed
     public float MoveTime = 2.00f;
     private bool isCollided = false;//düþman gemisinin önünde düþman varsa ateþ etmemesi için bool.
+    public bool isFront = false;
     GameManagement gameManagement;
 
     // Start is called before the first frame update
@@ -43,18 +44,18 @@ public class EnemySpaceship : MonoBehaviour
     public void EnemyFire()
     {
         GameObject laser2 = (GameObject)Resources.Load("Laser2", typeof(GameObject));
-        if (this.gameObject.tag.Equals("Enemy1") && !isCollided)
+        if (this.gameObject.tag.Equals("Enemy1") && (isFront || !isCollided))
         {
             GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.075f, 0), Quaternion.identity);
             enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
         }
         
-        if (this.gameObject.tag.Equals("Enemy2") && !isCollided) { 
+        if (this.gameObject.tag.Equals("Enemy2") && (isFront || !isCollided)) { 
             GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.244f, 0), Quaternion.identity);
             enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
         }
         
-        if (this.gameObject.tag.Equals("Enemy3") && !isCollided)
+        if (this.gameObject.tag.Equals("Enemy3") && (isFront || !isCollided))
         {
             GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x - 0.8235f, transform.position.y - 1.31994f, 0), Quaternion.identity);
             GameObject enemylaser2 = Instantiate(laser2, new Vector3(transform.position.x + 0.8235f, transform.position.y - 1.31994f, 0), Quaternion.identity);

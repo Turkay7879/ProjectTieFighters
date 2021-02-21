@@ -23,8 +23,20 @@ public class Laser : MonoBehaviour
         {
             Destroy(GameObject.Find(collision.name));
             int tempCount = Management.EnemyCount;
+            int temp2Count = Management.frontEnemy_count;
             tempCount--;
+
+            for(int i = 7; i < 14; i++)
+            {
+                if (collision.name.Equals("Enemy" + i.ToString()))
+                {
+                    temp2Count--;
+                    break;
+                }
+            }
+           
             Management.EnemyCount = tempCount;
+            Management.frontEnemy_count = temp2Count;
             Destroy(this.gameObject);
         }
         
