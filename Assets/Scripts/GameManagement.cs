@@ -113,10 +113,6 @@ public class GameManagement : MonoBehaviour
             num3 = Random.Range(0, 14);
         }
 
-        Debug.Log("Num1: " + num1);
-        Debug.Log("Num2: " + num2);
-        Debug.Log("Num3: " + num3);
-
         GameObject ship1 = GameObject.Find("Enemy" + num1.ToString());
         GameObject ship2 = GameObject.Find("Enemy" + num2.ToString());
         GameObject ship3 = GameObject.Find("Enemy" + num3.ToString());

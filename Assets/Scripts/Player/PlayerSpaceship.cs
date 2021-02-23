@@ -8,25 +8,22 @@ public class PlayerSpaceship : MonoBehaviour
     private float FireDelay = 0.25f, FireInterval = 0.5f;
     private bool StartedFiring = false;
     public Rigidbody2D rb;
-    
 
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Movement();
 
     }
 
-    void Movement()
+    public void Movement()
     {
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * Speed, 0);
-       
+        rb.velocity = new Vector2(SimpleInput.GetAxis("Horizontal") * Speed, 0);
     }
 
     void Fire()
