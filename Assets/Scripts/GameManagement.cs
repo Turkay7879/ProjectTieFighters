@@ -75,15 +75,41 @@ public class GameManagement : MonoBehaviour
 
     public void randomFire()
     {
-        int num1 = Random.Range(7, 14);
-        int num2 = Random.Range(7, 14);
-        int num3 = Random.Range(7, 14);
+        bool equality = false;
+        int num1=0;
+        int num2=0;
+        int num3=0;
+        while (equality == true)
+        {
+            num1 = Random.Range(7, 14);
+            num2 = Random.Range(7, 14);
+            num3 = Random.Range(7, 14);
+            if(num1 == num2 || num2 == num3 || num1 == num3)
+            {
+                equality = true;
+            }
+            else
+            {
+                equality = false;
+            }
+        }
 
         if (frontEnemy_count <= 3)
         {
-            num1 = Random.Range(0, 14);
-            num2 = Random.Range(0, 14);
-            num3 = Random.Range(0, 14);
+            while (equality == true)
+            {
+                num1 = Random.Range(0, 14);
+                num2 = Random.Range(0, 14);
+                num3 = Random.Range(0, 14);
+                if(num1 == num2 || num2 == num3 || num1 == num3)
+                {
+                    equality = true;
+                }
+                else
+                {
+                    equality = false;
+                }
+            }
         }
 
         GameObject ship1 = GameObject.Find("Enemy" + num1.ToString());
