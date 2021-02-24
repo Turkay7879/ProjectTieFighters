@@ -6,16 +6,10 @@ using UnityEngine.SceneManagement;
 public class Difficulty : MonoBehaviour
 {
     static string UsrDifficulty;
-    // Start is called before the first frame update
+    
     void Start()
     {
         UsrDifficulty = "";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void SelectEasy()

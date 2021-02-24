@@ -31,5 +31,10 @@ public class ScreenBoundary : MonoBehaviour
             Destroy(GameObject.Find(collision.name));
         }
 
+        else if(collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
+        {
+            Destroy(GameObject.Find(collision.name));
+        }
+
     }
 }
