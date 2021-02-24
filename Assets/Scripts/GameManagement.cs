@@ -42,6 +42,7 @@ public class GameManagement : MonoBehaviour
         {
             GameObject.Destroy(EnemyGroup1);
             GameObject.Destroy(EnemyGroup2);
+            EnemyCount = 0;
             Invoke("CreateEnemies", 2.0f);
         }
 
@@ -75,39 +76,34 @@ public class GameManagement : MonoBehaviour
 
     public void randomFire()
     {
-        bool equality = false;
+
         int num1=0;
         int num2=0;
         int num3=0;
-        while (equality == true)
+
+       
+        while (true)
         {
             num1 = Random.Range(7, 14);
             num2 = Random.Range(7, 14);
             num3 = Random.Range(7, 14);
-            if(num1 == num2 || num2 == num3 || num1 == num3)
+            if(num1 != num2 && num2 != num3)
             {
-                equality = true;
+                break;
             }
-            else
-            {
-                equality = false;
-            }
+        
         }
 
         if (frontEnemy_count <= 3)
         {
-            while (equality == true)
+            while (true)
             {
                 num1 = Random.Range(0, 14);
                 num2 = Random.Range(0, 14);
                 num3 = Random.Range(0, 14);
-                if(num1 == num2 || num2 == num3 || num1 == num3)
+                if (num1 != num2 && num2 != num3)
                 {
-                    equality = true;
-                }
-                else
-                {
-                    equality = false;
+                    break;
                 }
             }
         }

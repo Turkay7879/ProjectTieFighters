@@ -31,7 +31,8 @@ public class ScreenBoundary : MonoBehaviour
             Destroy(GameObject.Find(collision.name));
         }
 
-        else if(collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
+        GameObject temp = GameObject.Find(collision.name);
+        if((collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3")) && temp.transform.position.y < -10.6f)
         {
             Destroy(GameObject.Find(collision.name));
             int newEnemyCnt = management.EnemyCount;

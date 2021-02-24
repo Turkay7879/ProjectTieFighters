@@ -30,7 +30,7 @@ public class PlayerSpaceship : MonoBehaviour
     void Fire()
     {
         GameObject laser1 = (GameObject)Resources.Load("Laser1", typeof(GameObject));
-        GameObject laser = Instantiate(laser1, new Vector3(transform.position.x, transform.position.y + 1.284f, 0), Quaternion.identity);
+        GameObject laser = Instantiate(laser1, new Vector3(transform.position.x, transform.position.y + 1.207f, 0), Quaternion.identity);
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
         laser.name = "UsrLaser" + ID.ToString();
         ID++;

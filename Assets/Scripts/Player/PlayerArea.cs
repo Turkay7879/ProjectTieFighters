@@ -20,7 +20,6 @@ public class PlayerArea : MonoBehaviour
     {
         if (collision.tag.Equals("Laser"))
         {
-            Debug.Log("Dandik ------->>>>> " + collision.name);
             Destroy(GameObject.Find(collision.name));
             int newLives = Management.Lives;
             newLives--;
@@ -30,8 +29,7 @@ public class PlayerArea : MonoBehaviour
             {
                 Management.LifeText.GetComponent<UnityEngine.UI.Text>().text = ": 0";
                 Management.EndGame();
-            }
-                  
+            }       
         }
     }
 }
