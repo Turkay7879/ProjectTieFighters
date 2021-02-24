@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerSpaceship : MonoBehaviour
 {
+    private int ID = 0;
     public float Speed = 10.0f, laserSpeed = 10.0f;
     private float FireDelay = 0.25f, FireInterval = 0.5f;
     private bool StartedFiring = false;
@@ -29,9 +30,10 @@ public class PlayerSpaceship : MonoBehaviour
     void Fire()
     {
         GameObject laser1 = (GameObject)Resources.Load("Laser1", typeof(GameObject));
-        GameObject laser = Instantiate(laser1, new Vector3(transform.position.x, transform.position.y + 1.075f, 0), Quaternion.identity);
+        GameObject laser = Instantiate(laser1, new Vector3(transform.position.x, transform.position.y + 1.284f, 0), Quaternion.identity);
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
-        
+        laser.name = "UsrLaser" + ID.ToString();
+        ID++;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -5,13 +5,12 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     GameManagement Management;
-    // Start is called before the first frame update
+
     void Start()
     {
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -21,6 +20,16 @@ public class Laser : MonoBehaviour
     {
         if (collision.tag.Equals("Enemy1") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
+            int tempScore = Management.Score;
+            if (collision.tag.Equals("Enemy1"))
+                tempScore += 1;
+            else if (collision.tag.Equals("Enemy2"))
+                tempScore += 3;
+            else
+                tempScore += 5;
+            Management.Score = tempScore;
+            Management.ScoreText.GetComponent<UnityEngine.UI.Text>().text = ": " + Management.Score.ToString();
+
             Destroy(GameObject.Find(collision.name));
             int tempCount = Management.EnemyCount;
             int temp2Count = Management.frontEnemy_count;

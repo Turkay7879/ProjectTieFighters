@@ -21,7 +21,7 @@ public class EnemyLaser : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.name.Equals("Laser1(Clone)"))
+        if (collision.tag.Equals("Laser"))
         {
             Destroy(gameObject);
             Destroy(GameObject.Find(collision.name));

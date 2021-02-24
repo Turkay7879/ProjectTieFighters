@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ScreenBoundary : MonoBehaviour
 {
-    // Start is called before the first frame update
+    GameManagement management;
     void Start()
     {
-        
+        management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
     }
 
     // Update is called once per frame
@@ -34,6 +34,9 @@ public class ScreenBoundary : MonoBehaviour
         else if(collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
             Destroy(GameObject.Find(collision.name));
+            int newEnemyCnt = management.EnemyCount;
+            newEnemyCnt--;
+            management.EnemyCount = newEnemyCnt;
         }
 
     }

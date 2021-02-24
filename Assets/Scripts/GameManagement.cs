@@ -1,103 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManagement : MonoBehaviour
 {
-    public string Difficulty;
+    public string GameDiff;
     public float EnemySpeed = 2.5f;
-    public int Lives = 3, EnemyCount;
-    GameObject EnemyGroup1, EnemyGroup2;
+    public int Lives = 3, Score = 0, EnemyCount = 0, LaserID = 0;
+    GameObject EnemyGroup1, EnemyGroup2, gameOver, tryAgain, yesButton, noButton;
     private float FireDelay = 0.75f, FireInterval = 1.00f;
     private bool StartedFiring = false;
     public int frontEnemy_count;
-    // Start is called before the first frame update
+    public Text ScoreText;
+    public Text LifeText;
+
     void Start()
     {
-        EnemyCount = 0;
-        Difficulty = GetComponent<Difficulty>().GetDifficulty();
-        if (Difficulty.Equals("Easy"))
-            EasyMode();
-        else if (Difficulty.Equals("Medium"))
-            MediumMode();
-        else
-            HardMode();
-    }
+        Time.timeScale = 1.0f;
+        gameOver = GameObject.Find("GameOver");
+        gameOver.SetActive(false);
+        tryAgain = GameObject.Find("TryAgain");
+        tryAgain.SetActive(false);
+        yesButton = GameObject.Find("Yes");
+        yesButton.SetActive(false);
+        noButton = GameObject.Find("No");
+        noButton.SetActive(false);
 
-    // Update is called once per frame
+        GameDiff = Difficulty.UsrDifficulty;
+        if (GameDiff.Equals("") || GameDiff == null)
+            GameDiff = PlayerPrefs.GetString("Difficulty");
+        Debug.Log("Hebele --> " + GameDiff);
+        ScoreText = GameObject.Find("Score").GetComponent<Text>();
+        LifeText = GameObject.Find("Lives").GetComponent<Text>();
+        CreateEnemies();
+    }
+    
     void Update()
     {
-        if(Lives == 0)
-        {
-            Time.timeScale = 0;
-        }
-
         if (EnemyCount == 0)
         {
-            if (Difficulty.Equals("Easy"))
-            {
-                GameObject.Destroy(EnemyGroup1);
-                GameObject.Destroy(EnemyGroup2);
-                //GameManagement.Destroy(EnemyGroup2);
-            }
-               
+            GameObject.Destroy(EnemyGroup1);
+            GameObject.Destroy(EnemyGroup2);
             Invoke("CreateEnemies", 2.0f);
         }
 
-        if (!StartedFiring)        // düþmanlarýn hepsi ayný anda periodik bir þekilde ateþ eder
+        if (!StartedFiring)
         {
-           
             InvokeRepeating("randomFire", FireDelay, FireInterval);
             StartedFiring = true;
-            
         }
     }
 
     public void CreateEnemies()
     {   
-        if (Difficulty.Equals("Easy"))
+        if (GameDiff.Equals("Easy"))
         {
-            CreateGroups("Group1", "Group1", 7.5f, 6.0f, 7);
+            CreateGroups("Group1", "Group1", 6.0f, 4.5f, 7);
             frontEnemy_count = 7;
         }
-        else if (Difficulty.Equals("Medium"))
+        else if (GameDiff.Equals("Medium"))
         {
-            CreateGroups("Group2", "Group2", 7.0f, 4.9f, 7);
+            CreateGroups("Group2", "Group2", 6.0f, 3.9f, 7);
             frontEnemy_count = 7;
         }
         else
         {
-            CreateGroups("Group2", "Group3", 7.0f, 4.7f, 5);
+            CreateGroups("Group2", "Group3", 6.0f, 3.7f, 5);
             frontEnemy_count = 5;
         }
         CancelInvoke();
         StartedFiring = false;
-    }
-
-    public void EasyMode()
-    {
-        if (EnemyCount == 0) {
-            // Oyunun en baþýndaysak veya tüm düþmanlar yok edildiyse yeni düþman grubu oluþturulmalý
-            CreateEnemies();
-        }
-    }
-
-    public void MediumMode()
-    {
-        if (EnemyCount == 0)
-        {
-            // Oyunun en baþýndaysak veya tüm düþmanlar yok edildiyse yeni düþman grubu oluþturulmalý
-            CreateEnemies();
-        }
-    }
-
-    public void HardMode()
-    {
-        if (EnemyCount == 0)
-        {
-            // Oyunun en baþýndaysak veya tüm düþmanlar yok edildiyse yeni düþman grubu oluþturulmalý
-            CreateEnemies();
-        }
     }
 
     public void randomFire()
@@ -119,17 +92,20 @@ public class GameManagement : MonoBehaviour
 
         if (ship1 != null)
         {
-            ship1.GetComponent<EnemySpaceship>().EnemyFire();
+            ship1.GetComponent<EnemySpaceship>().EnemyFire(LaserID);
+            LaserID++;
         }
 
         if (ship2 != null)
         {
-            ship2.GetComponent<EnemySpaceship>().EnemyFire();
+            ship2.GetComponent<EnemySpaceship>().EnemyFire(LaserID);
+            LaserID++;
         }
 
         if (ship3 != null)
         {
-            ship3.GetComponent<EnemySpaceship>().EnemyFire();
+            ship3.GetComponent<EnemySpaceship>().EnemyFire(LaserID);
+            LaserID++;
         }
 
     }
@@ -152,5 +128,18 @@ public class GameManagement : MonoBehaviour
             tempShip.GetComponent<EnemySpaceship>().isFront = true;
             EnemyCount++;
         }
+    }
+
+    public void EndGame()
+    {
+        PlayerPrefs.SetString("Difficulty", GameDiff);
+        PlayerPrefs.Save();
+        Time.timeScale = 0f;
+        GameObject.Destroy(EnemyGroup1);
+        GameObject.Destroy(EnemyGroup2);
+        gameOver.SetActive(true);
+        tryAgain.SetActive(true);
+        yesButton.SetActive(true);
+        noButton.SetActive(true);
     }
 }

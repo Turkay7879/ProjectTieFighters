@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerArea : MonoBehaviour
 {
-    GameManagement gameManagement;
+    GameManagement Management;
     void Start()
     {
-        gameManagement = GameObject.Find("GameManagement").GetComponent<GameManagement>();   
+        Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();   
     }
 
 
@@ -20,10 +20,18 @@ public class PlayerArea : MonoBehaviour
     {
         if (collision.tag.Equals("Laser"))
         {
-            int newLives = gameManagement.Lives;
-            newLives--;
-            gameManagement.Lives = newLives;
+            Debug.Log("Dandik ------->>>>> " + collision.name);
             Destroy(GameObject.Find(collision.name));
+            int newLives = Management.Lives;
+            newLives--;
+            Management.Lives = newLives;
+            Management.LifeText.GetComponent<UnityEngine.UI.Text>().text = ": " + newLives.ToString();
+            if (newLives <= 0)
+            {
+                Management.LifeText.GetComponent<UnityEngine.UI.Text>().text = ": 0";
+                Management.EndGame();
+            }
+                  
         }
     }
 }
