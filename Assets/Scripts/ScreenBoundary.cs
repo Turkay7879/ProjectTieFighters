@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScreenBoundary : MonoBehaviour
 {
+    //EKRANIN DIÞINA ÇIKAN LAZERLERÝ DE YOK ET!!!!<
     GameManagement management;
     void Start()
     {
@@ -13,7 +14,7 @@ public class ScreenBoundary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    
     }
 
     void OnTriggerExit2D(Collider2D collision)
