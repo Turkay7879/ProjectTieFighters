@@ -314,6 +314,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 0.4
   MoveTime: 2
+  isFront: 0
 --- !u!1 &4536741682073067770
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +465,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 0.4
   MoveTime: 2
+  isFront: 0
 --- !u!1 &4536973565701708256
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +944,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 0.4
   MoveTime: 2
+  isFront: 0
 --- !u!1 &5032075057661122962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,6 +1095,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 0.4
   MoveTime: 2
+  isFront: 0
 --- !u!1 &5032397052880756872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1445,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 0.4
   MoveTime: 2
+  isFront: 0
 --- !u!1 &6787751916673510337
 GameObject:
   m_ObjectHideFlags: 0

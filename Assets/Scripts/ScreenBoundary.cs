@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ScreenBoundary : MonoBehaviour
 {
-    //EKRANIN DIÞINA ÇIKAN LAZERLERÝ DE YOK ET!!!!<
+
     GameManagement management;
+    GameObject player, group1, group2;
     void Start()
     {
         management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
+        player = GameObject.Find("Player");
+        group1 = GameObject.Find("Group1");
     }
 
     // Update is called once per frame
@@ -20,11 +23,14 @@ public class ScreenBoundary : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name.Equals("Player")) {
-            GameObject player = GameObject.Find("Player");
-            float magnitude = 10000f;
-            var force = transform.position - player.transform.position;
-            force.Normalize();
-            player.GetComponent<Rigidbody2D>().AddRelativeForce(force * magnitude);
+            
+            if (player.activeSelf)
+            {
+                float magnitude = 10000f;
+                var force = transform.position - player.transform.position;
+                force.Normalize();
+                player.GetComponent<Rigidbody2D>().AddRelativeForce(force * magnitude);
+            }
         }
 
         else if(collision.tag.Equals("Laser"))
@@ -32,14 +38,12 @@ public class ScreenBoundary : MonoBehaviour
             Destroy(GameObject.Find(collision.name));
         }
 
-        GameObject temp = GameObject.Find(collision.name);
-        if((collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3")) && temp.transform.position.y < -10.6f)
+        if ((collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3")) && collision.transform.position.y < -10.6f)
         {
             Destroy(GameObject.Find(collision.name));
             int newEnemyCnt = management.EnemyCount;
             newEnemyCnt--;
             management.EnemyCount = newEnemyCnt;
         }
-
     }
 }

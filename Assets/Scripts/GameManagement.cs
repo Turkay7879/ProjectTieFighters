@@ -14,6 +14,9 @@ public class GameManagement : MonoBehaviour
     public int frontEnemy_count;
     public Text ScoreText;
     public Text LifeText;
+    public bool isPaused = false;
+    //public bool PlayerDisabled = false;
+    public GameObject canvas, player;
 
     void Start()
     {
@@ -26,11 +29,16 @@ public class GameManagement : MonoBehaviour
         yesButton.SetActive(false);
         noButton = GameObject.Find("No");
         noButton.SetActive(false);
+        canvas = GameObject.Find("GameCanvas");
+        player = GameObject.Find("Player");
 
         GameDiff = Difficulty.UsrDifficulty;
-        if (GameDiff.Equals("") || GameDiff == null)
+
+        if (!GameDiff.Equals("Easy") && !GameDiff.Equals("Medium") && !GameDiff.Equals("Hard"))
+        {
             GameDiff = PlayerPrefs.GetString("Difficulty");
-        Debug.Log("Hebele --> " + GameDiff);
+        }
+            
         ScoreText = GameObject.Find("Score").GetComponent<Text>();
         LifeText = GameObject.Find("Lives").GetComponent<Text>();
         CreateEnemies();
@@ -43,6 +51,14 @@ public class GameManagement : MonoBehaviour
             GameObject.Destroy(EnemyGroup1);
             GameObject.Destroy(EnemyGroup2);
             EnemyCount = 0;
+            GameObject[] arr = GameObject.FindGameObjectsWithTag("Laser");
+            if (arr.Length != 0)
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    GameObject.Destroy(arr[i]);
+                }
+            }
             Invoke("CreateEnemies", 2.0f);
         }
 
@@ -57,12 +73,12 @@ public class GameManagement : MonoBehaviour
     {   
         if (GameDiff.Equals("Easy"))
         {
-            CreateGroups("Group1", "Group1", 6.0f, 4.5f, 7);
+            CreateGroups("Group1", "Group1", 6.0f, 4.0f, 7);
             frontEnemy_count = 7;
         }
         else if (GameDiff.Equals("Medium"))
         {
-            CreateGroups("Group2", "Group2", 6.0f, 3.9f, 7);
+            CreateGroups("Group2", "Group2", 6.0f, 4.0f, 7);
             frontEnemy_count = 7;
         }
         else
@@ -134,14 +150,16 @@ public class GameManagement : MonoBehaviour
 
     void CreateGroups(string grup_adi1, string grup_adi2, float y1, float y2, int count)
     {
-        GameObject Group1Prefab = (GameObject)Resources.Load(grup_adi1, typeof(GameObject));
+        GameObject Group1Prefab = (GameObject)Resources.Load("Prefabs\\"+ grup_adi1 + "New", typeof(GameObject));
         EnemyGroup1 = Instantiate(Group1Prefab, new Vector3(0f, y1, -1.89f), Quaternion.identity);
         for (int i = 0; i < 7; i++)
         {
             GameObject.Find(grup_adi1 + "-" + i.ToString()).name = "Enemy" + EnemyCount.ToString();
             EnemyCount++;
         }
-        GameObject Group2Prefab = (GameObject)Resources.Load(grup_adi2, typeof(GameObject));
+        EnemyGroup1.name = "Group1";
+  
+        GameObject Group2Prefab = (GameObject)Resources.Load("Prefabs\\" + grup_adi2 + "New", typeof(GameObject));
         EnemyGroup2 = Instantiate(Group2Prefab, new Vector3(0f, y2, -1.89f), Quaternion.identity);
         for (int i = 0; i < count; i++)
         {
@@ -150,6 +168,7 @@ public class GameManagement : MonoBehaviour
             tempShip.GetComponent<EnemySpaceship>().isFront = true;
             EnemyCount++;
         }
+        EnemyGroup2.name = "Group2";
     }
 
     public void EndGame()
@@ -163,5 +182,23 @@ public class GameManagement : MonoBehaviour
         tryAgain.SetActive(true);
         yesButton.SetActive(true);
         noButton.SetActive(true);
+    }
+
+    public void HideElements()
+    {    
+        canvas.SetActive(false);
+        player.SetActive(false);
+        if (EnemyGroup1 != null) EnemyGroup1.SetActive(false);
+        if (EnemyGroup2 != null) EnemyGroup2.SetActive(false);
+        Time.timeScale = 0.0f;
+    }
+
+    public void ShowElements()
+    {
+        canvas.SetActive(true);
+        player.SetActive(true);
+        if (EnemyGroup1 != null) EnemyGroup1.SetActive(true);
+        if (EnemyGroup2 != null) EnemyGroup2.SetActive(true);
+        Time.timeScale = 1.0f;
     }
 }

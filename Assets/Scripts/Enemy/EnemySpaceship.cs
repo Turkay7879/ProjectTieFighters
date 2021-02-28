@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemySpaceship : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class EnemySpaceship : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        StartCoroutine(EnemyMove(0));
+        StartCoroutine(EnemyMove());
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
     }
 
@@ -27,7 +28,8 @@ public class EnemySpaceship : MonoBehaviour
         }
     }
 
-    public IEnumerator EnemyMove(float time)
+    // Pause ekrani icin Time.timeScale = 0.0f yapildiginda bu coroutine iptal oluyor, duzeltilecek
+    public IEnumerator EnemyMove()
     {  
             StartingMove:
             rb.velocity = Vector2.left * Speed;
@@ -39,30 +41,31 @@ public class EnemySpaceship : MonoBehaviour
             goto StartingMove; 
     }
 
+    // Yeni lazer prefablarini kod ustunden ekle (Enemy1 --> Yesil, Enemy2 --> Sari, Enemy3 --> Mor)
     public void EnemyFire(int ID)
     {
-        GameObject laser2 = (GameObject)Resources.Load("Laser2", typeof(GameObject));
-        if (this.gameObject.tag.Equals("Enemy1") && (isFront || !isCollided))
+        GameObject laser2 = (GameObject)Resources.Load("Prefabs\\Laser3", typeof(GameObject));
+        if (gameObject.tag.Equals("Enemy1") && (isFront || !isCollided))
         {
-            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.075f, 0), Quaternion.identity);
-            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.326f, 0), Quaternion.identity);
             enemylaser.name = "EnemyLsr" + ID.ToString();
+            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed); 
         }
         
-        if (this.gameObject.tag.Equals("Enemy2") && (isFront || !isCollided)) { 
-            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.244f, 0), Quaternion.identity);
-            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        if (gameObject.tag.Equals("Enemy2") && (isFront || !isCollided)) { 
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.344f, 0), Quaternion.identity);
             enemylaser.name = "EnemyLsr" + ID.ToString();
+            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
         }
         
-        if (this.gameObject.tag.Equals("Enemy3") && (isFront || !isCollided))
+        if (gameObject.tag.Equals("Enemy3") && (isFront || !isCollided))
         {
-            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x - 0.8235f, transform.position.y - 1.31994f, 0), Quaternion.identity);
-            GameObject enemylaser2 = Instantiate(laser2, new Vector3(transform.position.x + 0.8235f, transform.position.y - 1.31994f, 0), Quaternion.identity);
-            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x - 0.421f, transform.position.y - 0.974f, 0), Quaternion.identity);
+            GameObject enemylaser2 = Instantiate(laser2, new Vector3(transform.position.x + 0.421f, transform.position.y - 0.974f, 0), Quaternion.identity);
             enemylaser.name = "EnemyLsr" + ID.ToString();
+            enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+            enemylaser2.name = "EnemyLsr" + (ID + 1).ToString();
             enemylaser2.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
-            enemylaser.name = "EnemyLsr" + (ID+1).ToString();
         }
         isCollided = false;
         
@@ -82,5 +85,4 @@ public class EnemySpaceship : MonoBehaviour
             isCollided = true;
         }
     }
-
 }

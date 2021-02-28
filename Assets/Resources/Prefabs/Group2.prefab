@@ -267,6 +267,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &2724341895285651075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -417,6 +418,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &7126221961025962171
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1014,6 +1016,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &7126221961550031115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1246,6 +1249,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &7126221961742443156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1396,6 +1400,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &7126221961868459512
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1546,6 +1551,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &7126221962066608837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1860,6 +1866,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   Speed: 2
   MoveTime: 2
+  isFront: 0
 --- !u!61 &7126221962469036329
 BoxCollider2D:
   m_ObjectHideFlags: 0
