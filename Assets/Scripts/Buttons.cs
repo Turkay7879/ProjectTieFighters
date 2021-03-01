@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
@@ -99,4 +101,5 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("DifficultyMenu");
     }
+
 }

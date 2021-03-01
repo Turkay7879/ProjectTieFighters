@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerArea : MonoBehaviour
 {
     public GameManagement Management;
-    AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        
     }
 
 
@@ -20,7 +20,7 @@ public class PlayerArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag.Equals("Laser"))
+        if (collision.tag.Equals("Laser") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
             Destroy(GameObject.Find(collision.name));
             audioSource.Play();

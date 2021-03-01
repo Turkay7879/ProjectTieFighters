@@ -9,12 +9,11 @@ public class PlayerSpaceship : MonoBehaviour
     private float FireDelay = 0.25f, FireInterval = 0.5f;
     private bool StartedFiring = false;
     public Rigidbody2D rb;
-    AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        audioSrc = GetComponent<AudioSource>();
     }
 
     void Update()

@@ -5,12 +5,12 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     GameManagement Management;
-    AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     void Start()
     {
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
-        audioSrc = GetComponent<AudioSource>();
+        audioSrc = GameObject.Find("Explosion").GetComponent<AudioSource>();
     }
 
     void Update()

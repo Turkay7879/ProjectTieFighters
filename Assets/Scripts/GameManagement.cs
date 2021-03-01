@@ -179,6 +179,11 @@ public class GameManagement : MonoBehaviour
         player.SetActive(false);
         if (EnemyGroup1 != null) EnemyGroup1.SetActive(false);
         if (EnemyGroup2 != null) EnemyGroup2.SetActive(false);
+        GameObject[] laserArr = GameObject.FindGameObjectsWithTag("Laser");
+        for(int i = 0; i < laserArr.Length; i++)
+        {
+            laserArr[i].transform.localScale = new Vector2(0,0);
+        }                                               
         Time.timeScale = 0.0f;
     }
 
@@ -188,6 +193,18 @@ public class GameManagement : MonoBehaviour
         player.SetActive(true);
         if (EnemyGroup1 != null) EnemyGroup1.SetActive(true);
         if (EnemyGroup2 != null) EnemyGroup2.SetActive(true);
+        GameObject[] laserArr = GameObject.FindGameObjectsWithTag("Laser");
+        for (int i = 0; i < laserArr.Length; i++)
+        {
+            if (laserArr[i].name.Contains("Enemy"))
+            {
+                laserArr[i].transform.localScale = new Vector3(0.8f, 1.9f, 1.0f);
+            }
+            else
+            {
+                laserArr[i].transform.localScale = new Vector3(0.13f, 0.23f, 1.0f);
+            }
+        }
         Time.timeScale = 1.0f;
     }
 }
