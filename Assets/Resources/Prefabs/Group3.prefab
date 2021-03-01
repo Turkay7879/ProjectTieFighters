@@ -754,9 +754,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6668137861924837226}
+  - component: {fileID: 3860131779123838060}
   m_Layer: 0
-  m_Name: Group3New
-  m_TagString: Untagged
+  m_Name: Group3
+  m_TagString: EnemyGroup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,3 +781,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3860131779123838060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6268032498666628248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac46b5dcf62a5364d868137ba6714c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
+  isTouched: 0
