@@ -15,28 +15,11 @@ public class EnemyLaser : MonoBehaviour
     {
         if (transform.position.y < -9.6f)
         {
-            Destroy(this.gameObject);
-            Debug.Log("GG");
+            Destroy(gameObject);
         }
             
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name.Equals("Outside"))
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.name.Equals("Outside"))
-        {
-            Destroy(this.gameObject);
-        }
-    }
-    */
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name.Equals("Boundary"))

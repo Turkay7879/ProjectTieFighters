@@ -8,30 +8,23 @@ public class GameManagement : MonoBehaviour
     public string GameDiff;
     public float EnemySpeed = 2.5f;
     public int Lives = 3, Score = 0, EnemyCount = 0, LaserID = 0;
-    GameObject EnemyGroup1, EnemyGroup2, gameOver, tryAgain, yesButton, noButton;
+    public GameObject gameOver, tryAgain, yesButton, noButton;
+    GameObject EnemyGroup1, EnemyGroup2;
     private float FireDelay = 0.75f, FireInterval = 1.00f;
     private bool StartedFiring = false;
     public int frontEnemy_count;
     public Text ScoreText;
     public Text LifeText;
     public bool isPaused = false;
-    //public bool PlayerDisabled = false;
     public GameObject canvas, player;
 
     void Start()
     {
-        Time.timeScale = 1.0f;
-        gameOver = GameObject.Find("GameOver");
         gameOver.SetActive(false);
-        tryAgain = GameObject.Find("TryAgain");
         tryAgain.SetActive(false);
-        yesButton = GameObject.Find("Yes");
         yesButton.SetActive(false);
-        noButton = GameObject.Find("No");
         noButton.SetActive(false);
-        canvas = GameObject.Find("GameCanvas");
-        player = GameObject.Find("Player");
-
+        Time.timeScale = 1.0f;
         GameDiff = Difficulty.UsrDifficulty;
 
         if (!GameDiff.Equals("Easy") && !GameDiff.Equals("Medium") && !GameDiff.Equals("Hard"))
@@ -39,8 +32,6 @@ public class GameManagement : MonoBehaviour
             GameDiff = PlayerPrefs.GetString("Difficulty");
         }
             
-        ScoreText = GameObject.Find("Score").GetComponent<Text>();
-        LifeText = GameObject.Find("Lives").GetComponent<Text>();
         CreateEnemies();
     }
     
@@ -51,14 +42,6 @@ public class GameManagement : MonoBehaviour
             GameObject.Destroy(EnemyGroup1);
             GameObject.Destroy(EnemyGroup2);
             EnemyCount = 0;
-            GameObject[] arr = GameObject.FindGameObjectsWithTag("Laser");
-            if (arr.Length != 0)
-            {
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    GameObject.Destroy(arr[i]);
-                }
-            }
             Invoke("CreateEnemies", 2.0f);
         }
 
@@ -150,7 +133,7 @@ public class GameManagement : MonoBehaviour
 
     void CreateGroups(string grup_adi1, string grup_adi2, float y1, float y2, int count)
     {
-        GameObject Group1Prefab = (GameObject)Resources.Load("Prefabs\\"+ grup_adi1 + "New", typeof(GameObject));
+        GameObject Group1Prefab = (GameObject)Resources.Load("Prefabs\\"+ grup_adi1, typeof(GameObject));
         EnemyGroup1 = Instantiate(Group1Prefab, new Vector3(0f, y1, -1.89f), Quaternion.identity);
         for (int i = 0; i < 7; i++)
         {
@@ -159,7 +142,7 @@ public class GameManagement : MonoBehaviour
         }
         EnemyGroup1.name = "Group1";
   
-        GameObject Group2Prefab = (GameObject)Resources.Load("Prefabs\\" + grup_adi2 + "New", typeof(GameObject));
+        GameObject Group2Prefab = (GameObject)Resources.Load("Prefabs\\" + grup_adi2, typeof(GameObject));
         EnemyGroup2 = Instantiate(Group2Prefab, new Vector3(0f, y2, -1.89f), Quaternion.identity);
         for (int i = 0; i < count; i++)
         {
@@ -178,6 +161,12 @@ public class GameManagement : MonoBehaviour
         Time.timeScale = 0f;
         GameObject.Destroy(EnemyGroup1);
         GameObject.Destroy(EnemyGroup2);
+        int LastHighScore = PlayerPrefs.GetInt("HighScore");
+        if (Score > LastHighScore)
+        {
+            PlayerPrefs.SetInt("HighScore", Score);
+            PlayerPrefs.Save();
+        }
         gameOver.SetActive(true);
         tryAgain.SetActive(true);
         yesButton.SetActive(true);

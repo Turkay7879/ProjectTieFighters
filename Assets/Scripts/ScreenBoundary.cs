@@ -5,16 +5,13 @@ using UnityEngine;
 public class ScreenBoundary : MonoBehaviour
 {
 
-    GameManagement management;
-    GameObject player, group1, group2;
+    public GameManagement management;
+    public GameObject player;
     void Start()
     {
-        management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
-        player = GameObject.Find("Player");
-        group1 = GameObject.Find("Group1");
+
     }
 
-    // Update is called once per frame
     void Update()
     {
     

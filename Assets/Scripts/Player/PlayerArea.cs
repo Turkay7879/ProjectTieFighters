@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerArea : MonoBehaviour
 {
-    GameManagement Management;
+    public GameManagement Management;
     void Start()
     {
-        Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();   
+  
     }
 
 

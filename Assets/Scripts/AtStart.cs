@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using TMPro;
 
+[InitializeOnLoad]
 public class AtStart : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TMP_Text HighScoreText;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!PlayerPrefs.HasKey("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", 0);
+            PlayerPrefs.Save();
+        }
+        int LastHighScore = PlayerPrefs.GetInt("HighScore");
+        HighScoreText.text = "En Yuksek Skor: " + LastHighScore.ToString();
     }
 }
