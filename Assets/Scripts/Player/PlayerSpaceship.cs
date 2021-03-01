@@ -9,11 +9,12 @@ public class PlayerSpaceship : MonoBehaviour
     private float FireDelay = 0.25f, FireInterval = 0.5f;
     private bool StartedFiring = false;
     public Rigidbody2D rb;
-
+    AudioSource audioSrc;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -34,6 +35,7 @@ public class PlayerSpaceship : MonoBehaviour
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
         laser.name = "UsrLaser" + ID.ToString();
         ID++;
+        audioSrc.Play();
     }
 
     void OnTriggerEnter2D(Collider2D collision)

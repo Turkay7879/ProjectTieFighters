@@ -5,10 +5,12 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     GameManagement Management;
+    AudioSource audioSrc;
 
     void Start()
     {
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -20,6 +22,8 @@ public class Laser : MonoBehaviour
     {
         if (collision.tag.Equals("Enemy1") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
+            audioSrc.Play();
+            gameObject.transform.localScale = new Vector2(0, 0);
             int tempScore = Management.Score;
             if (collision.tag.Equals("Enemy1"))
                 tempScore += 1;
@@ -46,8 +50,13 @@ public class Laser : MonoBehaviour
            
             Management.EnemyCount = tempCount;
             Management.frontEnemy_count = temp2Count;
-            Destroy(this.gameObject);
+            Invoke("DewIt", 1.0f);
         }
         
+    }
+
+    void DewIt()
+    {
+        Destroy(gameObject);
     }
 }

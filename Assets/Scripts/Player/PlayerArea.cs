@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerArea : MonoBehaviour
 {
     public GameManagement Management;
+    AudioSource audioSource;
+
     void Start()
     {
-  
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -21,6 +23,7 @@ public class PlayerArea : MonoBehaviour
         if (collision.tag.Equals("Laser"))
         {
             Destroy(GameObject.Find(collision.name));
+            audioSource.Play();
             int newLives = Management.Lives;
             newLives--;
             Management.Lives = newLives;

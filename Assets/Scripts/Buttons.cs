@@ -11,7 +11,7 @@ public class Buttons : MonoBehaviour
     
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -88,5 +88,15 @@ public class Buttons : MonoBehaviour
             pauseMenuCanvas.SetActive(true);
             SceneManager.UnloadSceneAsync("ExitScreen");
         }
+    }
+
+    public void HowToPlayOpen()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void HowToPlayClose()
+    {
+        SceneManager.LoadScene("DifficultyMenu");
     }
 }
