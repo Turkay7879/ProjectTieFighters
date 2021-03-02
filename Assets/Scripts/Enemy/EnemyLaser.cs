@@ -5,12 +5,6 @@ using UnityEngine;
 public class EnemyLaser : MonoBehaviour
 {
 
-    void Start()
-    {
-        
-    }
-
-
     void Update()
     {
         if (transform.position.y < -9.6f)

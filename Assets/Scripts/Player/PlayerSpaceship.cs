@@ -19,7 +19,6 @@ public class PlayerSpaceship : MonoBehaviour
     void Update()
     {
         Movement();
-
     }
 
     public void Movement()

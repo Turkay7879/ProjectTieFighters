@@ -11,16 +11,6 @@ public class Buttons : MonoBehaviour
     GameManagement management;
     GameObject pauseMenuCanvas;
     
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void MainMenuExit()
     {
         pauseMenuCanvas = GameObject.Find("MainMenuCanvas").transform.Find("MainCanvas").gameObject;
@@ -70,9 +60,7 @@ public class Buttons : MonoBehaviour
 
     public void PauseMenuQuit()
     {
-        pauseMenuCanvas = GameObject.Find("PauseMenuCanvas").transform.Find("PauseCanvas").gameObject;
-        pauseMenuCanvas.SetActive(false);
-        SceneManager.LoadScene("ExitScreen", LoadSceneMode.Additive);
+        SceneManager.LoadScene("DifficultyMenu");
     }
 
     public void GoBack()

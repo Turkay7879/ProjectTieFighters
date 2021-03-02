@@ -13,11 +13,6 @@ public class Laser : MonoBehaviour
         audioSrc = GameObject.Find("Explosion").GetComponent<AudioSource>();
     }
 
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Enemy1") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))

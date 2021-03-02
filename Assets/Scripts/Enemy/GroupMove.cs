@@ -7,11 +7,11 @@ public class GroupMove : MonoBehaviour
     public float Speed = 2.00f;
     public bool isTouched = false;
     public int r;
+
     void Start()
     {
         r = Random.Range(1, 3);
     }
-
 
     void Update()
     {
@@ -20,13 +20,14 @@ public class GroupMove : MonoBehaviour
         if (transform.position.x < -5f || transform.position.x > 5f)
         {   
             if(!isTouched)
-            isTouched = true;
+                isTouched = true;
 
             else
                 isTouched = false;
         }
 
     }
+
     void Movement()
     {
         
@@ -55,6 +56,4 @@ public class GroupMove : MonoBehaviour
             }
         }
     }
-
-
 }

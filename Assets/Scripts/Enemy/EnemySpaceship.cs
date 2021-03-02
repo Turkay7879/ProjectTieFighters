@@ -17,7 +17,6 @@ public class EnemySpaceship : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
-        //StartCoroutine(EnemyMove());
     }
 
     void Update()
@@ -28,20 +27,6 @@ public class EnemySpaceship : MonoBehaviour
         }  
     }
 
-    // Pause ekrani icin Time.timeScale = 0.0f yapildiginda bu coroutine iptal oluyor, duzeltilecek
-    /*public IEnumerator EnemyMove()
-    {  
-            StartingMove:
-            rb.velocity = Vector2.left * Speed;
-            yield return new WaitForSeconds(MoveTime);
-            rb.velocity = Vector2.right * Speed;
-            yield return new WaitForSeconds(MoveTime * 2);
-            rb.velocity = Vector2.left * Speed;
-            yield return new WaitForSeconds(MoveTime);
-            goto StartingMove; 
-    }*/
-
-    // Yeni lazer prefablarini kod ustunden ekle (Enemy1 --> Yesil, Enemy2 --> Sari, Enemy3 --> Mor)
     public void EnemyFire(int ID)
     {
         GameObject laser2 = (GameObject)Resources.Load("Prefabs\\Laser3", typeof(GameObject));

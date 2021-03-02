@@ -4,19 +4,9 @@ using UnityEngine;
 
 public class ScreenBoundary : MonoBehaviour
 {
-
     public GameManagement management;
     public GameObject player;
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-    
-    }
-
+   
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name.Equals("Player")) {
