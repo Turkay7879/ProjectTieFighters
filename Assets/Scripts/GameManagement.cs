@@ -8,13 +8,14 @@ public class GameManagement : MonoBehaviour
     public string GameDiff;
     public float EnemySpeed = 2.5f;
     public int Lives = 3, Score = 0, EnemyCount = 0, LaserID = 0;
-    public GameObject gameOver, tryAgain, yesButton, noButton;
+
     GameObject EnemyGroup1, EnemyGroup2;
     private float FireDelay = 0.75f, FireInterval = 1.00f;
     private bool StartedFiring = false;
     public int frontEnemy_count;
-    public Text ScoreText;
-    public Text LifeText;
+
+    public GameObject gameOver, tryAgain, yesButton, noButton;
+    public Text ScoreText, LifeText;
     public bool isPaused = false;
     public GameObject canvas, player;
 
@@ -39,8 +40,8 @@ public class GameManagement : MonoBehaviour
     {
         if (EnemyCount == 0)
         {
-            GameObject.Destroy(EnemyGroup1);
-            GameObject.Destroy(EnemyGroup2);
+            Destroy(EnemyGroup1);
+            Destroy(EnemyGroup2);
             EnemyCount = 0;
             Invoke("CreateEnemies", 2.0f);
         }
@@ -158,15 +159,19 @@ public class GameManagement : MonoBehaviour
     {
         PlayerPrefs.SetString("Difficulty", GameDiff);
         PlayerPrefs.Save();
+        Destroy(EnemyGroup1); Destroy(EnemyGroup2);
+        GameObject[] LeftoverLasers = GameObject.FindGameObjectsWithTag("Laser");
+        for (int i = 0; i < LeftoverLasers.Length; i++) Destroy(LeftoverLasers[i]);
+
         Time.timeScale = 0f;
-        GameObject.Destroy(EnemyGroup1);
-        GameObject.Destroy(EnemyGroup2);
         int LastHighScore = PlayerPrefs.GetInt("HighScore");
         if (Score > LastHighScore)
         {
             PlayerPrefs.SetInt("HighScore", Score);
             PlayerPrefs.Save();
         }
+
+        player.SetActive(false);
         gameOver.SetActive(true);
         tryAgain.SetActive(true);
         yesButton.SetActive(true);

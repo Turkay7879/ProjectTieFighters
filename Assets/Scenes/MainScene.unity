@@ -839,11 +839,11 @@ MonoBehaviour:
   Score: 0
   EnemyCount: 0
   LaserID: 0
+  frontEnemy_count: 0
   gameOver: {fileID: 1759486450}
   tryAgain: {fileID: 543372462}
   yesButton: {fileID: 1516245086}
   noButton: {fileID: 1219885267}
-  frontEnemy_count: 0
   ScoreText: {fileID: 2064700955}
   LifeText: {fileID: 1877600061}
   isPaused: 0
