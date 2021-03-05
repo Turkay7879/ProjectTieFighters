@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 5192954641549588803}
   - component: {fileID: 7705010635434269509}
   - component: {fileID: 6583963894207743758}
+  - component: {fileID: 3659613328124135618}
   m_Layer: 0
-  m_Name: Enemy2New
+  m_Name: Enemy2
   m_TagString: Enemy2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,6 +129,8 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
+  isShot: 0
+  anim: {fileID: 0}
 --- !u!50 &6583963894207743758
 Rigidbody2D:
   serializedVersion: 4
@@ -149,3 +152,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &3659613328124135618
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6193697498788053847}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

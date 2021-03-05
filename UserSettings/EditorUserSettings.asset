@@ -26,8 +26,17 @@ EditorUserSettings:
     RecentlyUsedScenePath-6:
       value: 22424703114646680e0b0227036c6f1103041d192f2d2835633c133af6f9
       flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646681d0f0f27032b560005580b3a2d2b232325200d0cf1e33136e7a923e7ee2e26
+      flags: 0
+    UnityRemoteCompression:
+      value: 29617121
+      flags: 0
     UnityRemoteDevice:
-      value: 225f4d46245b0d4902070862342649191512
+      value: 530104565d055a0b405e5c7341730a444447390e0e70766208
+      flags: 0
+    UnityRemoteResolution:
+      value: 275e4308165c135e
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
