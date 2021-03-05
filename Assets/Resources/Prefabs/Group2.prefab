@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5166365608044357512}
   - component: {fileID: 6644774898368910390}
   - component: {fileID: 6243942998145087336}
-  - component: {fileID: 5484993722589384908}
   m_Layer: 0
   m_Name: Group2-5
   m_TagString: Enemy2
@@ -129,8 +128,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &6243942998145087336
 Rigidbody2D:
   serializedVersion: 4
@@ -152,25 +149,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &5484993722589384908
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117870017608110036}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1263230635405387905
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +162,6 @@ GameObject:
   - component: {fileID: 2410592339303727345}
   - component: {fileID: 2391339512728438122}
   - component: {fileID: 8204155693809594208}
-  - component: {fileID: 6270983832461051969}
   m_Layer: 0
   m_Name: Group2-4
   m_TagString: Enemy2
@@ -300,8 +277,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &8204155693809594208
 Rigidbody2D:
   serializedVersion: 4
@@ -323,25 +298,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &6270983832461051969
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263230635405387905}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1417937018943138981
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +350,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 2
   isTouched: 0
-  r: 0
 --- !u!1 &3091028343255418459
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +363,6 @@ GameObject:
   - component: {fileID: 2203408204746244212}
   - component: {fileID: 8674892166649096101}
   - component: {fileID: 8609385130303215570}
-  - component: {fileID: 3886966968942877614}
   m_Layer: 0
   m_Name: Group2-0
   m_TagString: Enemy2
@@ -524,8 +478,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &8609385130303215570
 Rigidbody2D:
   serializedVersion: 4
@@ -547,25 +499,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &3886966968942877614
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3091028343255418459}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4144195891911651758
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +512,6 @@ GameObject:
   - component: {fileID: 4815530376631288351}
   - component: {fileID: 8312986302751163603}
   - component: {fileID: 7892066388480659909}
-  - component: {fileID: 3323311264802276713}
   m_Layer: 0
   m_Name: Group2-1
   m_TagString: Enemy2
@@ -695,8 +627,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &7892066388480659909
 Rigidbody2D:
   serializedVersion: 4
@@ -718,25 +648,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &3323311264802276713
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4144195891911651758}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6428924498218223729
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +661,6 @@ GameObject:
   - component: {fileID: 8146179789777491481}
   - component: {fileID: 6342923735373529529}
   - component: {fileID: 7862119171003305887}
-  - component: {fileID: 5757555657876922723}
   m_Layer: 0
   m_Name: Group2-6
   m_TagString: Enemy2
@@ -866,8 +776,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &7862119171003305887
 Rigidbody2D:
   serializedVersion: 4
@@ -889,25 +797,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &5757555657876922723
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6428924498218223729}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7061292560868016685
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +810,6 @@ GameObject:
   - component: {fileID: 6600476559633246703}
   - component: {fileID: 1117359777001633711}
   - component: {fileID: 369450918166587645}
-  - component: {fileID: 5785334643177650269}
   m_Layer: 0
   m_Name: Group2-3
   m_TagString: Enemy2
@@ -1037,8 +925,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &369450918166587645
 Rigidbody2D:
   serializedVersion: 4
@@ -1060,25 +946,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &5785334643177650269
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7061292560868016685}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7148554889867135269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,7 +959,6 @@ GameObject:
   - component: {fileID: 7344716638650510278}
   - component: {fileID: 2153926120044375476}
   - component: {fileID: 7038535794304615659}
-  - component: {fileID: 2918013739646701543}
   m_Layer: 0
   m_Name: Group2-2
   m_TagString: Enemy2
@@ -1208,8 +1074,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &7038535794304615659
 Rigidbody2D:
   serializedVersion: 4
@@ -1231,22 +1095,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &2918013739646701543
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7148554889867135269}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

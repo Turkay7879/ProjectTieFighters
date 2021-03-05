@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6475278307792015749}
   - component: {fileID: 5380433255153125092}
   - component: {fileID: 6618439741880975237}
-  - component: {fileID: 5235905760933497685}
   m_Layer: 0
   m_Name: Group3-1
   m_TagString: Enemy3
@@ -103,8 +102,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &5380433255153125092
 Rigidbody2D:
   serializedVersion: 4
@@ -152,25 +149,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.209161, y: 6.158517}
   m_EdgeRadius: 0
---- !u!95 &5235905760933497685
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229225252930022246}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2213207562176984928
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +162,6 @@ GameObject:
   - component: {fileID: 2746837722441885163}
   - component: {fileID: 7935532938547443212}
   - component: {fileID: 6362398232047098390}
-  - component: {fileID: 7161714477391308327}
   m_Layer: 0
   m_Name: Group3-2
   m_TagString: Enemy3
@@ -274,8 +251,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &7935532938547443212
 Rigidbody2D:
   serializedVersion: 4
@@ -323,25 +298,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.209161, y: 6.158517}
   m_EdgeRadius: 0
---- !u!95 &7161714477391308327
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213207562176984928}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2427305572880805455
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +311,6 @@ GameObject:
   - component: {fileID: 2178500956301416680}
   - component: {fileID: 649856225413335764}
   - component: {fileID: 5035942511338766985}
-  - component: {fileID: 3070296321625431752}
   m_Layer: 0
   m_Name: Group3-4
   m_TagString: Enemy3
@@ -445,8 +400,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &649856225413335764
 Rigidbody2D:
   serializedVersion: 4
@@ -494,25 +447,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.209161, y: 6.158517}
   m_EdgeRadius: 0
---- !u!95 &3070296321625431752
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2427305572880805455}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3433760348921059241
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +460,6 @@ GameObject:
   - component: {fileID: 8100796313803957759}
   - component: {fileID: 7428327469855956337}
   - component: {fileID: 662944917118474833}
-  - component: {fileID: 3979040320415794979}
   m_Layer: 0
   m_Name: Group3-0
   m_TagString: Enemy3
@@ -616,8 +549,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &7428327469855956337
 Rigidbody2D:
   serializedVersion: 4
@@ -665,25 +596,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.209161, y: 6.158517}
   m_EdgeRadius: 0
---- !u!95 &3979040320415794979
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3433760348921059241}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6022845052731022779
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +609,6 @@ GameObject:
   - component: {fileID: 6019720853353657487}
   - component: {fileID: 1392404431438847129}
   - component: {fileID: 557539661652646748}
-  - component: {fileID: 1927314871243449165}
   m_Layer: 0
   m_Name: Group3-3
   m_TagString: Enemy3
@@ -787,8 +698,6 @@ MonoBehaviour:
   Speed: 2
   MoveTime: 2
   isFront: 0
-  isShot: 0
-  anim: {fileID: 0}
 --- !u!50 &1392404431438847129
 Rigidbody2D:
   serializedVersion: 4
@@ -836,25 +745,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.209161, y: 6.158517}
   m_EdgeRadius: 0
---- !u!95 &1927314871243449165
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6022845052731022779}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f0b4973a57e197448dae7468ce65765, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6268032498666628248
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,4 +795,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 2
   isTouched: 0
-  r: 0

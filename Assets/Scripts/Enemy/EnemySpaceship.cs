@@ -10,15 +10,13 @@ public class EnemySpaceship : MonoBehaviour
     public float Speed = 2.00f; 
     public float MoveTime = 2.00f;
     private bool isCollided = false;
-    public bool isFront = false, isShot = false;
+    public bool isFront = false;
     GameManagement Management;
-    public Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
-        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -31,16 +29,15 @@ public class EnemySpaceship : MonoBehaviour
 
     public void EnemyFire(int ID)
     {
+        GameObject laser2 = (GameObject)Resources.Load("Prefabs\\Laser3", typeof(GameObject));
         if (gameObject.tag.Equals("Enemy1") && (isFront || !isCollided))
         {
-            GameObject laser1 = (GameObject)Resources.Load("Prefabs\\Laser1", typeof(GameObject));
-            GameObject enemylaser = Instantiate(laser1, new Vector3(transform.position.x, transform.position.y - 1.326f, 0), Quaternion.identity);
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.326f, 0), Quaternion.identity);
             enemylaser.name = "EnemyLsr" + ID.ToString();
             enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed); 
         }
         
-        if (gameObject.tag.Equals("Enemy2") && (isFront || !isCollided)) {
-            GameObject laser2 = (GameObject)Resources.Load("Prefabs\\Laser2", typeof(GameObject));
+        if (gameObject.tag.Equals("Enemy2") && (isFront || !isCollided)) { 
             GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x, transform.position.y - 1.344f, 0), Quaternion.identity);
             enemylaser.name = "EnemyLsr" + ID.ToString();
             enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
@@ -48,9 +45,8 @@ public class EnemySpaceship : MonoBehaviour
         
         if (gameObject.tag.Equals("Enemy3") && (isFront || !isCollided))
         {
-            GameObject laser3 = (GameObject)Resources.Load("Prefabs\\Laser3", typeof(GameObject));
-            GameObject enemylaser = Instantiate(laser3, new Vector3(transform.position.x - 0.421f, transform.position.y - 0.974f, 0), Quaternion.identity);
-            GameObject enemylaser2 = Instantiate(laser3, new Vector3(transform.position.x + 0.421f, transform.position.y - 0.974f, 0), Quaternion.identity);
+            GameObject enemylaser = Instantiate(laser2, new Vector3(transform.position.x - 0.421f, transform.position.y - 0.974f, 0), Quaternion.identity);
+            GameObject enemylaser2 = Instantiate(laser2, new Vector3(transform.position.x + 0.421f, transform.position.y - 0.974f, 0), Quaternion.identity);
             enemylaser.name = "EnemyLsr" + ID.ToString();
             enemylaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
             enemylaser2.name = "EnemyLsr" + (ID + 1).ToString();
