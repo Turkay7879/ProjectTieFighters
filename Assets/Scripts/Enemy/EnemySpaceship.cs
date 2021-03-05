@@ -7,16 +7,18 @@ public class EnemySpaceship : MonoBehaviour
 {
     public float laserSpeed = 10.0f;
     public Rigidbody2D rb;
+    public Collider2D cd;
     public float Speed = 2.00f; 
     public float MoveTime = 2.00f;
     private bool isCollided = false;
-    public bool isFront = false, isShot = false;
+    public bool isFront = false, isShot = false, scaleUp = false;
     GameManagement Management;
     public Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        cd = GetComponent<Collider2D>();
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
         anim = GetComponent<Animator>();
     }
@@ -27,6 +29,20 @@ public class EnemySpaceship : MonoBehaviour
         {
             transform.position += Vector3.down * Time.deltaTime * 0.50f;
         }  
+
+        if (isShot)
+        {
+            cd.enabled = false;
+            float scaleX = gameObject.transform.localScale.x;
+            float scaleY = gameObject.transform.localScale.y;
+            if (!scaleUp)
+            {
+                gameObject.transform.localScale = new Vector3(scaleX * 2.5f, scaleY * 2.5f, -1.89f);
+                scaleUp = true;
+            }
+            anim.Play("Explode");
+            Destroy(gameObject, 0.417f);
+        }
     }
 
     public void EnemyFire(int ID)
