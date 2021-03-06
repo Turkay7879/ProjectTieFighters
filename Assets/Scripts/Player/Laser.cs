@@ -61,6 +61,10 @@ public class Laser : MonoBehaviour
             if (collision.name.Contains("Star"))
             {
                 // Skoru artir ve ekrana yaz
+                int NewScore = Management.Score;
+                NewScore = NewScore + 3;
+                Management.Score = NewScore;
+                Management.ScoreText.GetComponent<UnityEngine.UI.Text>().text = ": " + NewScore.ToString();
             }
 
             else if (collision.name.Contains("Heart"))
