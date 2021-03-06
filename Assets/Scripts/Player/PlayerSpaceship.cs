@@ -38,7 +38,7 @@ public class PlayerSpaceship : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3")) && !StartedFiring)
+        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3") || collision.name.Contains("Heart") || collision.name.Contains("Star")) && !StartedFiring)
         {
             InvokeRepeating("Fire", FireDelay, FireInterval);
             StartedFiring = true;
@@ -47,7 +47,7 @@ public class PlayerSpaceship : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3")) && !StartedFiring)
+        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3") || collision.name.Contains("Heart") || collision.name.Contains("Star")) && !StartedFiring)
         {
             InvokeRepeating("Fire", FireDelay, FireInterval);
             StartedFiring = true;
@@ -56,7 +56,7 @@ public class PlayerSpaceship : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3")) && StartedFiring)
+        if ((collision.CompareTag("Enemy1") || collision.CompareTag("Enemy2") || collision.CompareTag("Enemy3") || collision.name.Contains("Heart") || collision.name.Contains("Star")) && StartedFiring)
         {
             CancelInvoke();
             StartedFiring = false;
