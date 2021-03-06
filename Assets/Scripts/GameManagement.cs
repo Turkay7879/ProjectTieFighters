@@ -19,6 +19,7 @@ public class GameManagement : MonoBehaviour
     public bool isPaused = false;
     public GameObject canvas, player;
 
+    GameObject Star1, Star2, Heart1, Heart2;
     void Start()
     {
         gameOver.SetActive(false);
@@ -51,6 +52,7 @@ public class GameManagement : MonoBehaviour
             InvokeRepeating("randomFire", FireDelay, FireInterval);
             StartedFiring = true;
         }
+        
     }
 
     public void CreateEnemies()
@@ -72,6 +74,8 @@ public class GameManagement : MonoBehaviour
         }
         CancelInvoke();
         StartedFiring = false;
+        InvokeRepeating("createBonus", 0f, 10.0f);
+        InvokeRepeating("destroyBonus", 10.0f, 10.0f);
     }
 
     public void randomFire()
@@ -211,5 +215,28 @@ public class GameManagement : MonoBehaviour
             }
         }
         Time.timeScale = 1.0f;
+    }
+
+    public void createBonus()
+    {
+        int choice = Random.Range(1, 3);
+        int horizontal = Random.Range(-12, 13);
+        int vertical = Random.Range(0, 7);
+        if (choice == 1)
+        {
+            Heart1 = (GameObject)Resources.Load("Prefabs\\Heart", typeof(GameObject));
+            Heart2 = Instantiate(Heart1, new Vector3(horizontal, vertical, 0), Quaternion.identity);
+        }
+        else
+        {
+            Star1 = (GameObject)Resources.Load("Prefabs\\Star", typeof(GameObject));
+            Star2 = Instantiate(Star1, new Vector3(horizontal, vertical, 0), Quaternion.identity);
+        }
+    }
+
+    public void destroyBonus()
+    {
+        Destroy(Heart2);
+        Destroy(Star2);
     }
 }
