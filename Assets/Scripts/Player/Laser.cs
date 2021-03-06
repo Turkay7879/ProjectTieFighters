@@ -18,10 +18,8 @@ public class Laser : MonoBehaviour
         GameObject obj = GameObject.Find(collision.name);
         if ((collision.tag.Equals("Enemy1") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3")) && !obj.GetComponent<EnemySpaceship>().isShot)
         {
-
             obj.GetComponent<EnemySpaceship>().isShot = true;
             audioSrc.Play();
-
             gameObject.transform.localScale = new Vector2(0, 0);
             int tempScore = Management.Score;
             if (collision.tag.Equals("Enemy1"))
@@ -33,11 +31,6 @@ public class Laser : MonoBehaviour
             Management.Score = tempScore;
             Management.ScoreText.GetComponent<UnityEngine.UI.Text>().text = ": " + Management.Score.ToString();
 
-            float scaleX = obj.transform.localScale.x;
-            float scaleY = obj.transform.localScale.y;
-            obj.transform.localScale = new Vector3(scaleX*2.5f, scaleY*2.5f, -1.89f);
-            obj.GetComponent<EnemySpaceship>().anim.Play("Explode");
-            Destroy(obj, 0.417f);
             int tempCount = Management.EnemyCount;
             int temp2Count = Management.frontEnemy_count;
             tempCount--;
@@ -53,7 +46,7 @@ public class Laser : MonoBehaviour
            
             Management.EnemyCount = tempCount;
             Management.frontEnemy_count = temp2Count;
-            Invoke("DewIt", 1.5f);
+            Destroy(gameObject);
         }
 
         else if (collision.tag.Equals("Bonus"))
@@ -76,11 +69,7 @@ public class Laser : MonoBehaviour
             }
 
             Destroy(obj);
+            Destroy(gameObject);
         }
-    }
-
-    void DewIt()
-    {
-        Destroy(gameObject);
     }
 }
