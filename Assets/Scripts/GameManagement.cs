@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class GameManagement : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class GameManagement : MonoBehaviour
     public bool isPaused = false;
     public GameObject canvas, player;
 
+    public AudioMixer mixer;
+
     GameObject Star1, Star2, Heart1, Heart2;
     int bonusID = 0;
     GameObject currentBonus;
@@ -29,6 +32,8 @@ public class GameManagement : MonoBehaviour
         tryAgain.SetActive(false);
         yesButton.SetActive(false);
         noButton.SetActive(false);
+        float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
+        mixer.SetFloat("MusicVol", Mathf.Log10(savedVolume) * 30);
         Time.timeScale = 1.0f;
         GameDiff = Difficulty.UsrDifficulty;
 

@@ -849,6 +849,7 @@ MonoBehaviour:
   isPaused: 0
   canvas: {fileID: 1399321718}
   player: {fileID: 881287443}
+  mixer: {fileID: 24100000, guid: c37f2d0bab0d8604ab210128ed6c684b, type: 2}
 --- !u!4 &832484990
 Transform:
   m_ObjectHideFlags: 0
