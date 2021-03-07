@@ -20,6 +20,9 @@ public class GameManagement : MonoBehaviour
     public GameObject canvas, player;
 
     GameObject Star1, Star2, Heart1, Heart2;
+    int bonusID = 0;
+    GameObject currentBonus;
+
     void Start()
     {
         gameOver.SetActive(false);
@@ -44,6 +47,10 @@ public class GameManagement : MonoBehaviour
             Destroy(EnemyGroup1);
             Destroy(EnemyGroup2);
             EnemyCount = 0;
+            if (currentBonus != null)
+            {
+                Destroy(currentBonus);
+            }
             Invoke("CreateEnemies", 2.0f);
         }
 
@@ -164,6 +171,10 @@ public class GameManagement : MonoBehaviour
         PlayerPrefs.SetString("Difficulty", GameDiff);
         PlayerPrefs.Save();
         Destroy(EnemyGroup1); Destroy(EnemyGroup2);
+        if (currentBonus != null)
+        {
+            Destroy(currentBonus);
+        }
         GameObject[] LeftoverLasers = GameObject.FindGameObjectsWithTag("Laser");
         for (int i = 0; i < LeftoverLasers.Length; i++) Destroy(LeftoverLasers[i]);
 
@@ -188,6 +199,10 @@ public class GameManagement : MonoBehaviour
         player.SetActive(false);
         if (EnemyGroup1 != null) EnemyGroup1.SetActive(false);
         if (EnemyGroup2 != null) EnemyGroup2.SetActive(false);
+        if (currentBonus != null)
+        {
+            currentBonus.transform.localScale = new Vector2(0, 0);
+        }
         GameObject[] laserArr = GameObject.FindGameObjectsWithTag("Laser");
         for(int i = 0; i < laserArr.Length; i++)
         {
@@ -202,6 +217,17 @@ public class GameManagement : MonoBehaviour
         player.SetActive(true);
         if (EnemyGroup1 != null) EnemyGroup1.SetActive(true);
         if (EnemyGroup2 != null) EnemyGroup2.SetActive(true);
+        if (currentBonus != null)
+        {
+            if (currentBonus.name.Contains("Star"))
+            {
+                currentBonus.transform.localScale = new Vector2(0.4f, 0.5f);
+            }
+            else
+            {
+                currentBonus.transform.localScale = new Vector2(0.4f, 0.4f);
+            }
+        }
         GameObject[] laserArr = GameObject.FindGameObjectsWithTag("Laser");
         for (int i = 0; i < laserArr.Length; i++)
         {
@@ -226,17 +252,22 @@ public class GameManagement : MonoBehaviour
         {
             Heart1 = (GameObject)Resources.Load("Prefabs\\Heart", typeof(GameObject));
             Heart2 = Instantiate(Heart1, new Vector3(horizontal, vertical, 0), Quaternion.identity);
+            Heart2.name = "Heart" + bonusID.ToString();
+            currentBonus = Heart2;
+            bonusID++;
         }
         else
         {
             Star1 = (GameObject)Resources.Load("Prefabs\\Star", typeof(GameObject));
             Star2 = Instantiate(Star1, new Vector3(horizontal, vertical, 0), Quaternion.identity);
+            Star2.name = "Star" + bonusID.ToString();
+            currentBonus = Star2;
+            bonusID++;
         }
     }
 
     public void destroyBonus()
     {
-        Destroy(Heart2);
-        Destroy(Star2);
+        Destroy(currentBonus);
     }
 }

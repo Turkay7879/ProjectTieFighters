@@ -15,7 +15,7 @@ public class GroupMove : MonoBehaviour
 
     void Update()
     {
-        Invoke("Movement", 0);
+        Movement();
 
         if (transform.position.x < -5f || transform.position.x > 5f)
         {   

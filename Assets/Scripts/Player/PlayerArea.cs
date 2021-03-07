@@ -11,7 +11,27 @@ public class PlayerArea : MonoBehaviour
     {
         if (collision.tag.Equals("Laser") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
-            Destroy(GameObject.Find(collision.name));
+            GameObject which = GameObject.Find(collision.name);
+            if (collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
+            {
+                int howEnemies = Management.EnemyCount;
+                howEnemies--;
+                Management.EnemyCount = howEnemies;
+                if (which.GetComponent<EnemySpaceship>().isFront)
+                {
+                    int howFront = Management.frontEnemy_count;
+                    howFront--;
+                    Management.frontEnemy_count = howFront;
+                }
+
+                which.GetComponent<EnemySpaceship>().isShot = true;
+            }
+
+            else
+            {
+                Destroy(which);
+            }
+
             audioSource.Play();
             int newLives = Management.Lives;
             newLives--;
