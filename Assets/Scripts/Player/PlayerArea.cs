@@ -6,12 +6,15 @@ public class PlayerArea : MonoBehaviour
 {
     public GameManagement Management;
     public AudioSource audioSource;
+    public GameObject player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Laser") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
         {
             GameObject which = GameObject.Find(collision.name);
+            PlayerRed();
+            Invoke("PlayerNormal", 0.5f);
             if (collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3"))
             {
                 int howEnemies = Management.EnemyCount;
@@ -43,5 +46,15 @@ public class PlayerArea : MonoBehaviour
                 Management.EndGame();
             }       
         }
+    }
+
+    void PlayerRed()
+    {
+        player.GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+    }
+
+    void PlayerNormal()
+    {
+        player.GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.white);
     }
 }
