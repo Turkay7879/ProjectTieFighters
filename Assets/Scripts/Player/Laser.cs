@@ -5,12 +5,13 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     GameManagement Management;
-    public AudioSource audioSrc;
+    public AudioSource ExplosionSound, BonusSound;
 
     void Start()
     {
         Management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
-        audioSrc = GameObject.Find("Explosion").GetComponent<AudioSource>();
+        ExplosionSound = GameObject.Find("Explosion").GetComponent<AudioSource>();
+        BonusSound = GameObject.Find("Bonus").GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +20,7 @@ public class Laser : MonoBehaviour
         if ((collision.tag.Equals("Enemy1") || collision.tag.Equals("Enemy2") || collision.tag.Equals("Enemy3")) && !obj.GetComponent<EnemySpaceship>().isShot)
         {
             obj.GetComponent<EnemySpaceship>().isShot = true;
-            audioSrc.Play();
+            ExplosionSound.Play();
             gameObject.transform.localScale = new Vector2(0, 0);
             int tempScore = Management.Score;
             if (collision.tag.Equals("Enemy1"))
@@ -51,9 +52,9 @@ public class Laser : MonoBehaviour
 
         else if (collision.tag.Equals("Bonus"))
         {
+            BonusSound.Play();
             if (collision.name.Contains("Star"))
             {
-                // Skoru artir ve ekrana yaz
                 int NewScore = Management.Score;
                 NewScore = NewScore + 3;
                 Management.Score = NewScore;

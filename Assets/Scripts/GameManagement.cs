@@ -49,13 +49,23 @@ public class GameManagement : MonoBehaviour
     {
         if (EnemyCount == 0)
         {
-            Destroy(EnemyGroup1);
-            Destroy(EnemyGroup2);
-            EnemyCount = 0;
+            if (EnemyGroup1 != null && EnemyGroup1.transform.childCount != 0)
+            {
+                Destroy(EnemyGroup1, 0.417f);
+                Destroy(EnemyGroup2);
+            }
+                
+            else if (EnemyGroup2 != null && EnemyGroup2.transform.childCount != 0)
+            {
+                Destroy(EnemyGroup1);
+                Destroy(EnemyGroup2, 0.417f);
+            }
+
             if (currentBonus != null)
             {
                 Destroy(currentBonus);
             }
+
             Invoke("CreateEnemies", 2.0f);
         }
 

@@ -20,8 +20,8 @@ public class Buttons : MonoBehaviour
 
     public void ExitGame()
     {
-        EditorApplication.isPlaying = false;
-        //Application.Quit();
+        //EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 
     public void TryAgainYes()
@@ -53,7 +53,6 @@ public class Buttons : MonoBehaviour
     {
         management = GameObject.Find("GameManagement").GetComponent<GameManagement>();
         string lastDiff = management.GameDiff;
-        Debug.Log("Before replay: " + lastDiff);
         PlayerPrefs.SetString("Difficulty", lastDiff);
         SceneManager.LoadScene("MainScene");
     }
