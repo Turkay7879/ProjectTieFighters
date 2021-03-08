@@ -13,7 +13,7 @@ public class GroupMove : MonoBehaviour
         r = Random.Range(1, 3);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Movement();
 
