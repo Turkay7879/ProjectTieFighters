@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'MEDIUM
+  m_text: 'ORTA
 
 '
   m_isRightToLeft: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'EASY
+  m_text: 'KOLAY
 
 '
   m_isRightToLeft: 0
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HARD
+  m_text: 'ZOR
 
 '
   m_isRightToLeft: 0

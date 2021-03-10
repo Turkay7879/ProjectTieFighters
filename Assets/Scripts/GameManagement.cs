@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using TMPro;
 
 public class GameManagement : MonoBehaviour
 {
@@ -12,10 +13,11 @@ public class GameManagement : MonoBehaviour
 
     GameObject EnemyGroup1, EnemyGroup2;
     private float FireDelay = 0.75f, FireInterval = 1.00f;
-    private bool StartedFiring = false;
+    private bool StartedFiring = false, GameIsStarted = false;
     public int frontEnemy_count;
 
     public GameObject gameOver, tryAgain, yesButton, noButton;
+    public TMP_Text ReadyText;
     public Text ScoreText, LifeText;
     public bool isPaused = false;
     public GameObject canvas, player;
@@ -34,20 +36,20 @@ public class GameManagement : MonoBehaviour
         noButton.SetActive(false);
         float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
         mixer.SetFloat("MusicVol", Mathf.Log10(savedVolume) * 30);
-        Time.timeScale = 1.0f;
+        
         GameDiff = Difficulty.UsrDifficulty;
-
         if (!GameDiff.Equals("Easy") && !GameDiff.Equals("Medium") && !GameDiff.Equals("Hard"))
         {
             GameDiff = PlayerPrefs.GetString("Difficulty");
         }
-            
-        CreateEnemies();
+
+        Time.timeScale = 1.0f;
+        StartCoroutine(ReadySetGo());
     }
     
     void Update()
     {
-        if (EnemyCount == 0)
+        if (EnemyCount == 0 && GameIsStarted)
         {
             if (EnemyGroup1 != null && EnemyGroup1.transform.childCount != 0)
             {
@@ -69,7 +71,7 @@ public class GameManagement : MonoBehaviour
             Invoke("CreateEnemies", 2.0f);
         }
 
-        if (!StartedFiring)
+        if (!StartedFiring && GameIsStarted)
         {
             InvokeRepeating("randomFire", FireDelay, FireInterval);
             StartedFiring = true;
@@ -284,5 +286,19 @@ public class GameManagement : MonoBehaviour
     public void destroyBonus()
     {
         Destroy(currentBonus);
+    }
+
+    private IEnumerator ReadySetGo()
+    {
+        yield return new WaitForSeconds(1.0f);
+        ReadyText.GetComponent<TMP_Text>().text = "2";
+        yield return new WaitForSeconds(1.0f);
+        ReadyText.GetComponent<TMP_Text>().text = "1";
+        yield return new WaitForSeconds(1.0f);
+        ReadyText.GetComponent<TMP_Text>().text = "BASLA!";
+        yield return new WaitForSeconds(1.0f);
+        ReadyText.transform.localScale = new Vector3(0, 0, 0);
+        CreateEnemies();
+        GameIsStarted = true;
     }
 }
